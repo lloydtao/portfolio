@@ -2,7 +2,7 @@
   <div class="flex flex-col sm:flex-row space-y-3 sm:space-x-3 sm:space-y-0">
     <HeroButton
       href="https://github.com/LloydTao"
-      class="bg-gray-700 hover:bg-gray-800 duration-100"
+      class="bg-github-primary hover:bg-github-lighter duration-100"
     >
       <IconWrapper>
         <GitHub />
@@ -11,7 +11,7 @@
     </HeroButton>
     <HeroButton
       href="https://twitter.com/LloydTao"
-      class="bg-blue-500 hover:bg-blue-600 duration-100"
+      class="bg-twitter-websafe hover:bg-twitter-primary duration-100"
     >
       <IconWrapper>
         <Twitter />
