@@ -1,5 +1,9 @@
 <template>
-  <Tutorial />
+  <div>
+    <Section>
+      <Hero />
+    </Section>
+  </div>
 </template>
 
 <script lang="ts">
