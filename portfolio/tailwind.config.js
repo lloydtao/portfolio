@@ -13,6 +13,21 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
+    extend: {
+      colors: {
+        github: {
+          primary: '#211F1F',
+          darker: '#141313',
+          lighter: '#373535',
+        },
+        twitter: {
+          primary: '#139BF1',
+          darker: '#1670ab',
+          lighter: '#2f89c5',
+          websafe: '#0778D6',
+        },
+      },
+    },
   },
   plugins: [],
 }
