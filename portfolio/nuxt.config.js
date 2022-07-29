@@ -25,6 +25,7 @@ export default {
     dirs: [
       '~/components',
       '~/components/footer',
+      '~/components/hero',
       '~/components/icons',
       '~/components/navbar',
       '~/components/section',
