@@ -26,7 +26,7 @@ jobs:
         package-manager:
           - yarn
         lockfile:
-          - yarn.lock
+          - portfolio/yarn.lock
 
     steps:
       - name: Check out repository
