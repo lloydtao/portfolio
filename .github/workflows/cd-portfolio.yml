@@ -1,0 +1,60 @@
+name: portfolio cd
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+defaults:
+  run:
+    shell: bash
+    working-directory: portfolio/
+
+jobs:
+  cd:
+    name: Build and deploy portfolio
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+        node-version:
+          - 16.13.1
+        package-manager:
+          - yarn
+        lockfile:
+          - portfolio/yarn.lock
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2.4.0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2.5.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: ${{ matrix.package-manager }}
+          cache-dependency-path: ${{ matrix.lockfile }}
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Lint project
+        run: yarn lint
+
+      - name: Test project
+        run: yarn test
+
+      - name: Generate project
+        run: yarn generate
+
+      - name: Export storybook
+        run: yarn storybook build --output-dir "dist/_storybook"
+
+      - name: Deploy project to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        with:
+          folder: portfolio/dist
