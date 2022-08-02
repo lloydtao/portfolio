@@ -1,6 +1,8 @@
 <template>
-  <div class="flex flex-col sm:flex-row justify-between items-center">
+  <div
+    class="flex flex-col sm:flex-row items-center sm:items-start space-y-5 sm:space-y-0 justify-between mt-5"
+  >
     <FooterCopyright />
-    <FooterLinks class="mt-3 sm:mt-0" />
+    <FooterLinks />
   </div>
 </template>
