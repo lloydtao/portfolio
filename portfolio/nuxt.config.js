@@ -96,7 +96,7 @@ export default {
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: { transpile: ['three'] },
 
   // Storybook configuration: https://storybook.nuxtjs.org/api/options
   storybook: {},
