@@ -56,7 +56,11 @@ export default {
 
       this.scene = new Three.Scene()
 
-      const geometry = new Three.BoxGeometry(0.2, 0.2, 0.2)
+      const geometry = new Three.BoxGeometry(
+        this.cube.width,
+        this.cube.height,
+        this.cube.depth
+      )
       const material = new Three.MeshNormalMaterial()
 
       this.mesh = new Three.Mesh(geometry, material)
@@ -70,6 +74,15 @@ export default {
       requestAnimationFrame(this.animate)
       this.mesh.rotation.x += 0.01
       this.mesh.rotation.y += 0.02
+      if (this.cube.updated) {
+        this.mesh.geometry.dispose()
+        this.mesh.geometry = new Three.BoxGeometry(
+          this.cube.width,
+          this.cube.height,
+          this.cube.depth
+        )
+        this.cube.updated = false
+      }
       this.renderer.render(this.scene, this.camera)
     },
     resize() {
