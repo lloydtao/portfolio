@@ -6,16 +6,24 @@
     />
     <div class="flex justify-center space-x-3 mt-5">
       <button
-        class="rounded shadow bg-gray-50 text-gray-900 font-semibold px-5 py-1"
+        class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
         v-on:click="decreaseCubeSize"
       >
-        Smaller
+        <span class="text-lg text-gray-900 font-bold">
+          <IconWrapper>
+            <MinusSm />
+          </IconWrapper>
+        </span>
       </button>
       <button
-        class="rounded shadow bg-gray-50 text-gray-900 font-semibold px-5 py-1"
+        class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
         v-on:click="increaseCubeSize"
       >
-        Bigger
+        <span class="text-lg text-gray-900 font-bold">
+          <IconWrapper>
+            <PlusSm />
+          </IconWrapper>
+        </span>
       </button>
     </div>
   </div>
