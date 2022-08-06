@@ -2,7 +2,7 @@
   <div>
     <div class="absolute h-full bg-gradient-to-b from-gray-800 to-gray-900">
       <img
-        class="h-full w-auto top-0 -mt-64 md:-mt-48 lg:-mt-16 xl:mt-0"
+        class="top-0"
         src="~/assets/images/bg.svg"
         width="1920"
         height="1080"
