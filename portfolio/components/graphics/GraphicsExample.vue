@@ -42,9 +42,9 @@ export default {
       mesh: null,
       cube: {
         updated: false,
-        width: 0.1,
-        height: 0.1,
-        depth: 0.1,
+        width: 0.3,
+        height: 0.3,
+        depth: 0.3,
       },
     }
   },
