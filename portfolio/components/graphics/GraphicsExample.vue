@@ -1,6 +1,9 @@
 <template>
   <div>
-    <div id="canvas" class="flex h-64 mt-3 sm:mt-5" />
+    <div
+      id="canvas"
+      class="flex h-64 border-2 border-gray-200 border-dashed rounded-xl bg-black bg-opacity-30"
+    />
     <div class="flex justify-center space-x-3 mt-5">
       <button
         class="rounded shadow bg-gray-50 text-gray-900 font-semibold px-5 py-1"
