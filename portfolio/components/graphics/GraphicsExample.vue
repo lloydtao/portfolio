@@ -7,7 +7,7 @@
     <div class="flex justify-center space-x-3 mt-5">
       <button
         class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
-        v-on:click="decreaseCubeSize"
+        @click="decreaseCubeSize"
       >
         <span class="text-lg text-gray-900 font-bold">
           <IconWrapper>
@@ -17,7 +17,7 @@
       </button>
       <button
         class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
-        v-on:click="increaseCubeSize"
+        @click="increaseCubeSize"
       >
         <span class="text-lg text-gray-900 font-bold">
           <IconWrapper>
