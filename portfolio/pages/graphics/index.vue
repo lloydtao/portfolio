@@ -6,7 +6,7 @@
       >
         three.js example
       </h1>
-      <GraphicsExample class="mt-8" />
+      <GraphicsExample class="mt-5 sm:mt-8" />
     </Section>
   </div>
 </template>
