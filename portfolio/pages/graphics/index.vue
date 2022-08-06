@@ -1,9 +1,7 @@
 <template>
   <div>
     <Section>
-      <h1
-        class="text-4xl sm:text-5xl text-gray-100 uppercase font-black mt-2 sm:mt-3"
-      >
+      <h1 class="text-4xl sm:text-5xl text-gray-100 uppercase font-black">
         three.js example
       </h1>
       <GraphicsExample class="mt-5 sm:mt-8" />
