@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col sm:flex-row space-y-3 sm:space-x-3 sm:space-y-0">
+  <div
+    class="flex flex-col justify-center sm:flex-row space-y-3 sm:space-x-3 sm:space-y-0"
+  >
     <HeroButton
       href="https://github.com/LloydTao"
       class="bg-github-primary hover:bg-github-lighter duration-100"
