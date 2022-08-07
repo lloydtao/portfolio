@@ -35,6 +35,17 @@
           >]
         </span>
       </li>
+      <li>
+        <span class="italic">Exceptional</span> - Literature Review: "Detecting
+        and Preventing Advanced Persistent Threats"
+        <span class="text-sm">
+          [<a
+            class="text-blue-400 underline"
+            href="/documents/detecting-and-preventing-advanced-persistent-threats.pdf"
+            >pdf</a
+          >]
+        </span>
+      </li>
     </ul>
     <p class="text-gray-200 mt-5">Guest talks</p>
     <ul
