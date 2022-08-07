@@ -3,7 +3,7 @@
     <div class="mx-auto">
       <img
         class="h-48 sm:h-64 w-48 sm:w-64 rounded-full ring-2 sm:ring-4 ring-gray-200 bg-gray-200 overflow-hidden"
-        src="~/assets/images/square.png"
+        src="~/assets/images/square.jpg"
       />
     </div>
     <h1 class="text-4xl text-gray-100 uppercase font-black mt-5">
