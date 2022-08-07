@@ -6,7 +6,7 @@
         src="~/assets/images/square.jpg"
       />
     </div>
-    <h1 class="text-4xl text-gray-100 uppercase font-black mt-5">
+    <h1 class="text-4xl sm:text-5xl text-gray-100 uppercase font-black mt-5">
       Lewis Lloyd
     </h1>
     <p class="text-gray-300 mt-3">yung software engineer &trade;</p>
