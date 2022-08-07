@@ -3,6 +3,9 @@
     <Section>
       <Hero />
     </Section>
+    <Section class="bg-gray-700">
+      <HomeAbout />
+    </Section>
   </div>
 </template>
 
