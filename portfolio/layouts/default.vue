@@ -3,7 +3,7 @@
     <div class="absolute h-full">
       <img
         class="top-0"
-        src="~/assets/images/bg.svg"
+        src="/images/bg.svg"
         width="1920"
         height="1080"
         alt="Blue and purple background graphics"
