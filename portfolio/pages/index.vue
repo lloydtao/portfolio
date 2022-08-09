@@ -3,9 +3,6 @@
     <Section>
       <Hero />
     </Section>
-    <Section class="bg-gray-700">
-      <University />
-    </Section>
     <Section class="bg-gray-800">
       <Hackathon />
     </Section>
