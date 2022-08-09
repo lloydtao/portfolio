@@ -2,7 +2,7 @@
   <div class="flex flex-col text-center">
     <div class="mx-auto">
       <img
-        class="h-48 sm:h-64 w-48 sm:w-64 rounded-full ring-2 sm:ring-4 ring-gray-200 bg-gray-200 overflow-hidden"
+        class="h-48 sm:h-64 w-48 sm:w-64 rounded-full shadow ring-2 sm:ring-4 ring-gray-200 bg-gray-200 overflow-hidden"
         src="~/assets/images/square.jpg"
       />
     </div>
