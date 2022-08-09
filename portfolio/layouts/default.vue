@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="absolute h-full bg-gradient-to-b from-gray-800 to-gray-900">
+    <div class="absolute h-full">
       <img
         class="top-0"
         src="~/assets/images/bg.svg"
