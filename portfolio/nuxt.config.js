@@ -96,6 +96,9 @@ export default {
     manifest: {
       lang: 'en',
     },
+    meta: {
+      theme_color: '#111827',
+    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
