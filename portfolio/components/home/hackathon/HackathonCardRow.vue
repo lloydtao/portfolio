@@ -20,6 +20,8 @@
       description="Visualise the path, speed and intensity of historic tropical cyclones in 3D, and filter via web interface"
       image="tropical-cyclone.jpg"
       date="25th January 2020"
-    />
+    >
+      <p class="text-yellow-400 font-semibold">&#129351; First place!</p>
+    </HackathonCard>
   </div>
 </template>
