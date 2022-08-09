@@ -5,7 +5,7 @@
   >
     <img
       class="w-8"
-      src="~/assets/images/logo.png?webp"
+      src="/images/logo.png"
       width="32"
       height="32"
       alt="Pink boxes logo"

@@ -7,7 +7,7 @@
       <div class="overflow-hidden">
         <img
           class="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
-          :src="getUrl(image)"
+          :src="image"
         />
       </div>
       <div class="flex flex-1 flex-col px-5 py-4">
@@ -36,14 +36,6 @@ export default {
     description: { type: String, default: '' },
     image: { type: String, default: '' },
     link: { type: String, default: '#' },
-  },
-  methods: {
-    getUrl(image: string) {
-      if (image === '') {
-        return 'https://placekitten.com/480/270'
-      }
-      return require(`~/assets/images/${image}`)
-    },
   },
 }
 </script>

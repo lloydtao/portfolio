@@ -9,7 +9,7 @@
       </p>
       <img
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
-        src="~/assets/images/hackathon-group.jpg"
+        src="/images/hackathon-group.jpg"
       />
       <p class="text-gray-200 mt-5">Awards</p>
       <ul
@@ -78,7 +78,7 @@
       <p class="text-xl text-gray-100 mt-5 sm:mt-8">Exeter Computing Society</p>
       <img
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
-        src="~/assets/images/computing-society.jpg"
+        src="/images/computing-society.jpg"
       />
       <p class="text-gray-200 mt-5">Committee</p>
       <ul
