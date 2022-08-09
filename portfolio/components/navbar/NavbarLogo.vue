@@ -3,7 +3,7 @@
     to="/"
     class="flex items-center space-x-3 text-gray-50 hover:text-gray-400 duration-100"
   >
-    <img
+    <nuxt-img
       class="w-8"
       src="/images/logo.png"
       width="32"
