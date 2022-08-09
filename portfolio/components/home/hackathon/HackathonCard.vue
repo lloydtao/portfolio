@@ -28,8 +28,6 @@
 </template>
 
 <script lang="ts">
-declare var require: any
-
 export default {
   props: {
     title: { type: String, default: '' },
@@ -41,7 +39,7 @@ export default {
   },
   methods: {
     getUrl(image: string) {
-      if (image == '') {
+      if (image === '') {
         return 'https://placekitten.com/480/270'
       }
       return require(`~/assets/images/${image}`)
