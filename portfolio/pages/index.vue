@@ -7,7 +7,7 @@
       <University />
     </Section>
     <Section class="bg-gray-800">
-      <HomeHackathons />
+      <Hackathon />
     </Section>
   </div>
 </template>
