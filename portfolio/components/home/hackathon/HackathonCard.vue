@@ -1,6 +1,6 @@
 <template>
   <a
-    href="#"
+    :href="link"
     class="bg-gray-900 hover:bg-gray-700 duration-200 rounded-lg shadow border border-gray-700 overflow-hidden"
   >
     <div class="flex flex-col md:flex-row">
@@ -37,6 +37,7 @@ export default {
     date: { type: String, default: '' },
     description: { type: String, default: '' },
     image: { type: String, default: '' },
+    link: { type: String, default: '#' },
   },
   methods: {
     getUrl(image: string) {
