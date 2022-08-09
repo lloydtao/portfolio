@@ -8,8 +8,8 @@
         <nuxt-img
           class="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
           :src="image"
-          width="384"
-          height="256"
+          width="640"
+          height="360"
           :alt="'Preview image for' + project"
         />
       </div>
