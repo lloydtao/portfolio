@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
         <img
-          class="object-cover h-60 xl:h-48 w-full md:w-96"
+          class="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
           :src="getUrl(image)"
         />
       </div>
