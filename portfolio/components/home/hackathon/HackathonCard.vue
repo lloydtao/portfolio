@@ -11,12 +11,12 @@
         />
       </div>
       <div class="flex flex-1 flex-col px-5 py-4">
-        <p class="text-xl text-gray-100">
+        <p class="text-xl text-gray-100 font-semibold">
           {{ title }}
         </p>
         <h2 class="text-sm text-gray-400 mt-1">{{ date }}</h2>
-        <h2 class="text-gray-200 mt-2">{{ project }}</h2>
-        <p class="text-sm text-gray-300 mt-2">
+        <h2 class="text-lg text-gray-300 mt-2">{{ project }}</h2>
+        <p class="text-gray-400 mt-2">
           {{ description }}
         </p>
         <div
