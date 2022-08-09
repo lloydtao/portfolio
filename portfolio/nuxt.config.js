@@ -71,6 +71,8 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    //https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
