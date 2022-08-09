@@ -57,6 +57,7 @@ export default {
       '~/components/graphics',
       '~/components/hero',
       '~/components/home',
+      '~/components/home/university',
       '~/components/icons',
       '~/components/navbar',
       '~/components/section',

@@ -4,7 +4,7 @@
       <Hero />
     </Section>
     <Section class="bg-gray-700">
-      <HomeAbout />
+      <University />
     </Section>
     <Section class="bg-gray-800">
       <HomeHackathons />
