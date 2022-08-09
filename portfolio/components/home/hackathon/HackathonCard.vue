@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
         <img
-          class="object-cover h-48 md:h-48 w-full md:w-96"
+          class="object-cover h-60 xl:h-48 w-full md:w-96"
           :src="getUrl(image)"
         />
       </div>
@@ -19,10 +19,9 @@
         <p class="text-gray-400 mt-2">
           {{ description }}
         </p>
-        <div
-          href="https://github.com/lloydtao/Hackathon-Junction-2021"
-          class="flex items-center rounded-lg overflow-hidden mt-3"
-        ></div>
+        <div class="mt-3">
+          <slot></slot>
+        </div>
       </div>
     </div>
   </a>
