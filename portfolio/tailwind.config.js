@@ -15,6 +15,10 @@ module.exports = {
     },
     extend: {
       colors: {
+        devto: {
+          primary: '#0a0a0a',
+          lighter: '#454545',
+        },
         github: {
           primary: '#211F1F',
           darker: '#141313',
