@@ -20,6 +20,11 @@ module.exports = {
           darker: '#141313',
           lighter: '#373535',
         },
+        linkedin: {
+          primary: '#0A66C2',
+          darker: '#004182',
+          lighter: '#378fe9',
+        },
         twitter: {
           primary: '#139BF1',
           darker: '#1670ab',
