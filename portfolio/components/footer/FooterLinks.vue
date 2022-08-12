@@ -5,32 +5,36 @@
         <p class="text-gray-100 font-semibold text-sm">Pages</p>
       </li>
       <li>
-        <a
-          href="/blog"
+        <NuxtLink
+          to="/blog"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Blog</a
         >
+          Blog
+        </NuxtLink>
       </li>
       <li>
-        <a
-          href="/projects"
+        <NuxtLink
+          to="/projects"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Projects</a
         >
+          Projects
+        </NuxtLink>
       </li>
       <li>
-        <a
-          href="/contact"
+        <NuxtLink
+          to="/contact"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Contact</a
         >
+          Contact
+        </NuxtLink>
       </li>
       <li>
-        <a
-          href="/graphics/"
+        <NuxtLink
+          to="/graphics"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Graphics</a
         >
+          Graphics
+        </NuxtLink>
       </li>
     </ul>
     <ul class="flex flex-col">
@@ -45,11 +49,12 @@
         >
       </li>
       <li>
-        <a
-          href="/_storybook/"
+        <NuxtLink
+          to="/_storybook"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Storybook</a
         >
+          Storybook
+        </NuxtLink>
       </li>
     </ul>
     <ul class="flex flex-col">
