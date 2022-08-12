@@ -25,6 +25,13 @@
           >Contact</a
         >
       </li>
+      <li>
+        <a
+          href="/graphics/"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          >Graphics</a
+        >
+      </li>
     </ul>
     <ul class="flex flex-col">
       <li>
@@ -75,18 +82,6 @@
           href="https://www.instagram.com/lloydtao/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
           >Instagram</a
-        >
-      </li>
-    </ul>
-    <ul class="flex flex-col">
-      <li>
-        <p class="text-gray-100 font-semibold text-sm">Other</p>
-      </li>
-      <li>
-        <a
-          href="/graphics/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Graphics</a
         >
       </li>
     </ul>
