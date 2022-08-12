@@ -27,7 +27,7 @@ module.exports = {
         instagram: {
           primary: '#C13584',
           darker: '#833AB4',
-          lighter: '#E1306C',
+          lighter: '#d76ea9',
         },
         linkedin: {
           primary: '#0A66C2',
