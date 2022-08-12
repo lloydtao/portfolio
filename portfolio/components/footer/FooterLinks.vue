@@ -2,6 +2,32 @@
   <div class="flex space-x-12">
     <ul class="flex flex-col">
       <li>
+        <p class="text-gray-100 font-semibold text-sm">Pages</p>
+      </li>
+      <li>
+        <a
+          href="/blog"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          >Blog</a
+        >
+      </li>
+      <li>
+        <a
+          href="/projects"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <ul class="flex flex-col">
+      <li>
         <p class="text-gray-100 font-semibold text-sm">Resources</p>
       </li>
       <li>
