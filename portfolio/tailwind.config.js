@@ -34,6 +34,11 @@ module.exports = {
           darker: '#004182',
           lighter: '#378fe9',
         },
+        spotify: {
+          primary: '#1db954',
+          darker: '#14813a',
+          lighter: '#32de6f',
+        },
         twitter: {
           primary: '#139BF1',
           darker: '#1670ab',
