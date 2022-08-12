@@ -8,7 +8,7 @@
         <a
           href="https://github.com/lloydtao/portfolio"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-          >Source</a
+          >Source code</a
         >
       </li>
       <li>
