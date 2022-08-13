@@ -53,6 +53,7 @@ export default {
   components: {
     dirs: [
       '~/components',
+      '~/components/contact',
       '~/components/footer',
       '~/components/graphics',
       '~/components/hero',
