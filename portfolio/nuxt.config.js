@@ -108,5 +108,7 @@ export default {
   build: { transpile: ['three'] },
 
   // Storybook configuration: https://storybook.nuxtjs.org/api/options
-  storybook: {},
+  storybook: {
+    parameters: { layout: 'fullscreen' },
+  },
 }
