@@ -18,11 +18,5 @@
     >
       <Twitter />
     </IconLinkWrapper>
-    <IconLinkWrapper
-      class="text-gray-50 hover:text-gray-400 duration-100"
-      href="https://instagram.com/lloydtao"
-    >
-      <Instagram />
-    </IconLinkWrapper>
   </div>
 </template>
