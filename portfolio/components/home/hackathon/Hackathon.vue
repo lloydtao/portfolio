@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8">
+  <div>
     <h1 class="text-3xl text-gray-100 uppercase font-black">
       Hackathon showcase
     </h1>

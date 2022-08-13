@@ -4,7 +4,9 @@
       <Hero />
     </Section>
     <Section class="bg-gray-800">
-      <Hackathon />
+      <div class="py-5">
+        <Hackathon />
+      </div>
     </Section>
   </div>
 </template>
