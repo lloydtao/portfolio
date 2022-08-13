@@ -1,5 +1,5 @@
 export default {
-  title: 'Contact',
+  title: 'Content/Contact',
 }
 
 export const Contact = () => '<Contact />'
