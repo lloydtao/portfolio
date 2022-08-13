@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col justify-start text-left items-start">
-    <div class="flex flex-col lg:w-3/4 xl:w-2/3 py-3 sm:py-8">
+    <div class="flex flex-col lg:w-3/4 xl:w-2/3">
       <h1 class="text-2xl sm:text-3xl text-gray-100 uppercase font-black">
         University of Exeter
       </h1>
