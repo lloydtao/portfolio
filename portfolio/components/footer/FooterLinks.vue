@@ -49,12 +49,12 @@
         >
       </li>
       <li>
-        <NuxtLink
-          to="/_storybook"
+        <a
+          href="/_storybook/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Storybook
-        </NuxtLink>
+        </a>
       </li>
     </ul>
   </div>
