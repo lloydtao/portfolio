@@ -4,30 +4,37 @@ export default {
 
 // Brand icons
 
-let brands_markup = ''
-let brands = ['DevTo', 'GitHub', 'Instagram', 'LinkedIn', 'Spotify', 'Twitter']
+let brandsMarkup = ''
+const brands = [
+  'DevTo',
+  'GitHub',
+  'Instagram',
+  'LinkedIn',
+  'Spotify',
+  'Twitter',
+]
 
 brands.forEach(
   (brand) =>
-    (brands_markup +=
+    (brandsMarkup +=
       '<IconWrapper><div class="text-gray-50 border border-red-500 w-6 h-6"><' +
       brand +
       ' /></div></ IconWrapper>')
 )
 
-export const Brands = () => brands_markup
+export const Brands = () => brandsMarkup
 
 // Symbols
 
-let symbols_markup = ''
-let symbols = ['PlusSm', 'MinusSm']
+let symbolsMarkup = ''
+const symbols = ['PlusSm', 'MinusSm']
 
 symbols.forEach(
   (symbol) =>
-    (symbols_markup +=
+    (symbolsMarkup +=
       '<IconWrapper><div class="text-gray-50 border border-red-500 w-6 h-6"><' +
       symbol +
       ' /></div></ IconWrapper>')
 )
 
-export const Symbols = () => '<div>' + symbols_markup + '</div>'
+export const Symbols = () => '<div>' + symbolsMarkup + '</div>'
