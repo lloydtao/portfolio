@@ -8,15 +8,15 @@
     </IconLinkWrapper>
     <IconLinkWrapper
       class="text-gray-50 hover:text-gray-400 duration-100"
-      href="https://linkedin.com/in/lloydtao/"
-    >
-      <LinkedIn />
-    </IconLinkWrapper>
-    <IconLinkWrapper
-      class="text-gray-50 hover:text-gray-400 duration-100"
       href="https://twitter.com/lloydtao"
     >
       <Twitter />
+    </IconLinkWrapper>
+    <IconLinkWrapper
+      class="text-gray-50 hover:text-gray-400 duration-100"
+      href="https://linkedin.com/in/lloydtao/"
+    >
+      <LinkedIn />
     </IconLinkWrapper>
   </div>
 </template>
