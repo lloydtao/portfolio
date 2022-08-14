@@ -6,7 +6,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/blog"
+          to="/blog/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Blog
@@ -14,7 +14,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/projects"
+          to="/projects/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Projects
@@ -22,7 +22,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/contact"
+          to="/contact/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Contact
@@ -30,7 +30,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/graphics"
+          to="/graphics/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Graphics
@@ -50,7 +50,7 @@
       </li>
       <li>
         <NuxtLink
-          to="/storybook"
+          to="/storybook/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Storybook
