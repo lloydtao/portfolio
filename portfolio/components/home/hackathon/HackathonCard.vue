@@ -11,6 +11,7 @@
           width="640"
           height="360"
           :alt="'Preview image for' + project"
+          format="webp"
         />
       </div>
       <div class="flex flex-1 flex-col px-5 py-4">

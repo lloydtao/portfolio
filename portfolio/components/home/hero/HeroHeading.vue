@@ -7,6 +7,7 @@
         width="256"
         height="256"
         alt="Group holiday photo in Portugal"
+        format="webp"
       />
     </div>
     <h1 class="text-4xl sm:text-5xl text-gray-100 uppercase font-black mt-5">

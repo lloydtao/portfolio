@@ -9,6 +9,7 @@
       width="32"
       height="32"
       alt="Pink boxes logo"
+      format="webp"
     />
     <span class="text-2xl font-semibold">lloyd.cx</span>
   </NuxtLink>

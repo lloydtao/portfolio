@@ -10,6 +10,7 @@
       <image-safe
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/hackathon-group.jpg"
+        format="webp"
       />
       <p class="text-gray-200 mt-5">Awards</p>
       <ul
@@ -79,6 +80,7 @@
       <image-safe
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/computing-society.jpg"
+        format="webp"
       />
       <p class="text-gray-200 mt-5">Committee</p>
       <ul
