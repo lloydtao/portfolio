@@ -22,11 +22,6 @@
 
 <script lang="ts">
 export default {
-  data() {
-    return {
-      server: process.server,
-    }
-  },
   props: {
     imageClass: { type: String, default: '' },
     src: { type: String, default: '' },
@@ -34,6 +29,11 @@ export default {
     height: { type: String, default: '' },
     alt: { type: String, default: '' },
     format: { type: String, default: '' },
+  },
+  data() {
+    return {
+      server: process.server,
+    }
   },
 }
 </script>
