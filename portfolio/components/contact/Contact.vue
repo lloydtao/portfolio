@@ -46,7 +46,7 @@
         </HeroButton>
         <HeroButton
           href="https://open.spotify.com/user/11130532873"
-          class="bg-spotify-primary hover:bg-spotify-lighter duration-100"
+          class="bg-spotify-websafe hover:bg-spotify-lighter duration-100"
         >
           <IconWrapper>
             <Spotify />
