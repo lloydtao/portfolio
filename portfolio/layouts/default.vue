@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="absolute h-full">
+    <div class="absolute h-full w-full">
       <img
-        class="top-0"
+        class="w-full top-0"
         src="/images/bg.svg"
         width="1920"
         height="1080"
