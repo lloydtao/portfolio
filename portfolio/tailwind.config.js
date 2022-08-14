@@ -37,7 +37,8 @@ module.exports = {
         spotify: {
           primary: '#1db954',
           darker: '#14813a',
-          lighter: '#32de6f',
+          lighter: '#1ed760',
+          websafe: '#19884B',
         },
         twitter: {
           primary: '#139BF1',
