@@ -10,7 +10,7 @@
     </div>
     <div class="flex flex-col rounded-lg overflow-hidden mt-5">
       <a
-        class="flex items-center space-x-2 text-gray-50 bg-gray-600 hover:bg-gray-500 shadow font-semibold duration-100 px-5 py-2 justify-end"
+        class="flex items-center space-x-2 text-gray-50 bg-gray-600 hover:bg-gray-500 shadow font-semibold duration-100 px-2 py-1.5 justify-end"
         :href="storybookUrl"
       >
         <p>Full screen</p>
