@@ -49,6 +49,14 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
 
+  // Environment variables: https://nuxtjs.org/docs/configuration-glossary/configuration-env
+  env: {
+    storybookBaseUrl:
+      process.env.NODE_ENV !== 'production'
+        ? 'http://localhost:3003/'
+        : 'https://lloyd.cx/_storybook/',
+  },
+
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: {
     dirs: [
