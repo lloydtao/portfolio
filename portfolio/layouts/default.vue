@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="absolute h-full">
-      <image-safe
+      <img
         class="top-0"
         src="/images/bg.svg"
         width="1920"
