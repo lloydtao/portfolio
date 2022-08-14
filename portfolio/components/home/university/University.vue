@@ -7,7 +7,7 @@
       <p class="text-xl text-gray-100 mt-3 sm:mt-5">
         BSc (Hons) Computer Science
       </p>
-      <nuxt-img
+      <image-safe
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/hackathon-group.jpg"
       />
@@ -76,7 +76,7 @@
         </li>
       </ul>
       <p class="text-xl text-gray-100 mt-5 sm:mt-8">Exeter Computing Society</p>
-      <nuxt-img
+      <image-safe
         class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/computing-society.jpg"
       />

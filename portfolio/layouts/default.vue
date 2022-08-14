@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="absolute h-full">
-      <nuxt-img
+      <image-safe
         class="top-0"
         src="/images/bg.svg"
         width="1920"
