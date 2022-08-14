@@ -7,6 +7,7 @@
       :width="width"
       :height="height"
       :alt="alt"
+      :format="format"
     />
     <img
       v-else
@@ -32,6 +33,7 @@ export default {
     width: { type: String, default: '' },
     height: { type: String, default: '' },
     alt: { type: String, default: '' },
+    format: { type: String, default: '' },
   },
 }
 </script>
