@@ -5,7 +5,7 @@
   >
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
-        <nuxt-img
+        <image-safe
           class="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
           :src="image"
           width="640"
