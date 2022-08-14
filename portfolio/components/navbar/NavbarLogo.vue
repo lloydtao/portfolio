@@ -4,7 +4,7 @@
     class="flex items-center space-x-3 text-gray-50 hover:text-gray-400 duration-100"
   >
     <image-safe
-      class="w-8"
+      imageClass="w-8"
       src="/images/logo.png"
       width="32"
       height="32"

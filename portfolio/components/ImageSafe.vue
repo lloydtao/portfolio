@@ -2,7 +2,7 @@
   <div>
     <nuxt-img
       v-if="server"
-      :class="class_"
+      :class="imageClass"
       :src="src"
       :width="width"
       :height="height"
@@ -11,7 +11,7 @@
     />
     <img
       v-else
-      :class="class_"
+      :class="imageClass"
       :src="src"
       :width="width"
       :height="height"
@@ -28,7 +28,7 @@ export default {
     }
   },
   props: {
-    class_: { type: String, default: '' },
+    imageClass: { type: String, default: '' },
     src: { type: String, default: '' },
     width: { type: String, default: '' },
     height: { type: String, default: '' },
