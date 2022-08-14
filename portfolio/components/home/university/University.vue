@@ -8,7 +8,7 @@
         BSc (Hons) Computer Science
       </p>
       <image-safe
-        imageClass="h-48 sm:h-64 object-cover mt-3 rounded-lg"
+        image-class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/hackathon-group.jpg"
         format="webp"
       />
@@ -78,7 +78,7 @@
       </ul>
       <p class="text-xl text-gray-100 mt-5 sm:mt-8">Exeter Computing Society</p>
       <image-safe
-        imageClass="h-48 sm:h-64 object-cover mt-3 rounded-lg"
+        image-class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/computing-society.jpg"
         format="webp"
       />

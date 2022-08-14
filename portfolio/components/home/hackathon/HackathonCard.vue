@@ -6,7 +6,7 @@
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
         <image-safe
-          imageClass="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
+          image-class="object-cover h-48 md:h-64 xl:h-48 w-full md:w-96"
           :src="image"
           width="640"
           height="360"
