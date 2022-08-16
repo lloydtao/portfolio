@@ -5,6 +5,11 @@
     </Section>
     <Section class="bg-gray-800">
       <div class="py-5">
+        <Skills />
+      </div>
+    </Section>
+    <Section class="bg-gray-700">
+      <div class="py-5">
         <Hackathon />
       </div>
     </Section>
