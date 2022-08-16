@@ -7,10 +7,10 @@
         <slot name="icon"></slot>
       </div>
       <div class="text-center text-gray-200 font-semibold mt-1">
-        {{ this.skill }}
+        {{ skill }}
       </div>
       <div class="text-center text-sm text-gray-300 font-mono mt-1">
-        {{ this.description }}
+        {{ description }}
       </div>
     </div>
   </div>

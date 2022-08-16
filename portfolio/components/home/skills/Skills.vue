@@ -7,28 +7,28 @@
         skill="Frontend"
         description="JavaScript, Vue, Tailwind"
       >
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
-            <Template />
+            <TemplateIcon />
           </IconWrapperSolid>
         </template>
       </SkillsCard>
       <SkillsCard class="flex-1" skill="Backend" description="Django, PHP">
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
             <Server />
           </IconWrapperSolid>
         </template>
       </SkillsCard>
       <SkillsCard class="flex-1" skill="DevOps" description="AWS, Git, Docker">
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
             <Cloud />
           </IconWrapperSolid>
         </template>
       </SkillsCard>
       <SkillsCard class="flex-1" skill="Database" description="SQL, Postgres">
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
             <Database />
           </IconWrapperSolid>
@@ -39,7 +39,7 @@
         skill="API Design"
         description="REST, JWT, Serverless"
       >
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
             <Link />
           </IconWrapperSolid>
@@ -50,7 +50,7 @@
         skill="Machine Learning"
         description="Python, scikit-learn"
       >
-        <template v-slot:icon>
+        <template #icon>
           <IconWrapperSolid class="text-gray-50">
             <Chip />
           </IconWrapperSolid>
