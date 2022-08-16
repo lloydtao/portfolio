@@ -4,8 +4,7 @@
       <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
         Projects
       </h1>
-      <p class="text-lg text-gray-200 mt-2">How I've kept myself busy</p>
-
+      <p class="text-lg text-gray-300 mt-3">How I've kept myself busy</p>
       <h2 class="text-2xl sm:text-3xl text-gray-200 uppercase font-black mt-5">
         Hackathons
       </h2>
