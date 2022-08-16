@@ -1,7 +1,6 @@
 <template>
-  <a
-    href="#"
-    class="bg-gray-700 hover:bg-gray-600 border border-gray-500 hover:border-gray-400 rounded shadow px-5 py-5 duration-100 transform hover:scale-105 hover:-rotate-2"
+  <div
+    class="bg-gray-700 border border-gray-500 rounded shadow px-5 py-5 duration-100"
   >
     <div class="flex flex-col">
       <div class="flex justify-center">
@@ -14,7 +13,7 @@
         {{ this.description }}
       </div>
     </div>
-  </a>
+  </div>
 </template>
 
 <script lang="ts">
