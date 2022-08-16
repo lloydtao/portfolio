@@ -28,6 +28,7 @@ export default Vue.extend({
         'subtitle',
         'description',
         'series',
+        'localimage',
         'publishedAt',
         'published',
       ])
