@@ -8,11 +8,6 @@
         <Skills />
       </div>
     </Section>
-    <Section class="bg-gray-700">
-      <div class="py-5">
-        <Hackathon />
-      </div>
-    </Section>
   </div>
 </template>
 
