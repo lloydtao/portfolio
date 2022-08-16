@@ -20,7 +20,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'ProjectPage',
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const hackathons = await $content('projects')
       .only([
         'slug',
