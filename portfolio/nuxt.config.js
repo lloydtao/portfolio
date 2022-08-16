@@ -67,6 +67,7 @@ export default {
       '~/components/hero',
       '~/components/home',
       '~/components/home/hackthon',
+      '~/components/home/skills',
       '~/components/home/university',
       '~/components/icons',
       '~/components/navbar',
