@@ -4,6 +4,7 @@ title: 'Tropical cyclone visualiser'
 subtitle: 'Met Office Hackathon 2020'
 series: 'Hackathons'
 description: 'Visualise the path, speed and intensity of historic tropical cyclones'
+localimage: '/images/tropical-cyclone.jpg'
 publishedAt: '2020-01-25T09:00:00.000Z'
 tags: ''
 published: true

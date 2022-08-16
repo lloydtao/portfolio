@@ -11,6 +11,7 @@
       :title="post.title"
       :subtitle="post.subtitle"
       :series="post.series"
+      :localimage="post.localimage"
       :description="post.description"
       :published-at="post.publishedAt"
     />

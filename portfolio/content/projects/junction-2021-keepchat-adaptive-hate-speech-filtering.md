@@ -4,6 +4,7 @@ title: 'KeepChat'
 subtitle: 'Junction 2021'
 series: 'Hackathons'
 description: 'Programmable chat API with adaptive hate speech filtering'
+localimage: '/images/keepchat.png'
 publishedAt: '2021-11-21T09:00:00.000Z'
 tags: 'machinelearning, ai, nlp'
 published: true

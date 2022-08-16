@@ -11,13 +11,18 @@
         <h2 class="text-sm text-gray-500 px-5 truncate">
           {{ subtitle }}
         </h2>
-        <img
-          src="https://placekitten.com/640/360"
-          alt="Cover image placeholder"
-          class="w-full object-cover mt-3"
-          width="640"
-          height="360"
-        />
+        <div
+          class="flex items-center overflow-hidden"
+          style="aspect-ratio: 16 / 9"
+        >
+          <img
+            :src="localimage"
+            alt="Cover image placeholder"
+            class="w-full object-cover mt-3"
+            width="640"
+            height="360"
+          />
+        </div>
         <p class="text-sm text-gray-200 mt-3 overflow-hidden px-5">
           {{ description }}
         </p>
@@ -34,6 +39,7 @@ export default {
     title: { type: String, default: 'Title' },
     subtitle: { type: String, default: 'Subtitle' },
     series: { type: String, default: 'Series' },
+    localimage: { type: String, default: 'localimage' },
     description: { type: String, default: 'Description' },
     publishedAt: { type: String, default: '2000-01-01T00:00:00.000Z' },
   },
