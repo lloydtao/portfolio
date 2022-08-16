@@ -11,10 +11,7 @@
         <h2 class="text-sm text-gray-500 px-5 truncate">
           {{ subtitle }}
         </h2>
-        <div
-          class="flex items-center overflow-hidden"
-          style="aspect-ratio: 16 / 9"
-        >
+        <div class="overflow-hidden" style="aspect-ratio: 16 / 9">
           <img
             :src="localimage"
             alt="Cover image placeholder"
