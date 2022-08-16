@@ -71,6 +71,7 @@ export default {
       '~/components/home/university',
       '~/components/icons',
       '~/components/navbar',
+      '~/components/posts',
       '~/components/section',
     ],
   },
