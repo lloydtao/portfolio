@@ -15,7 +15,7 @@
           <Navbar />
         </Section>
         <Nuxt />
-        <Section>
+        <Section class="py-2">
           <Footer />
         </Section>
       </div>
