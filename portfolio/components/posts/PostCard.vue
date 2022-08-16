@@ -8,7 +8,7 @@
         <h2 class="text-sm text-gray-300 px-5">
           {{ formatDate(publishedAt) }}
         </h2>
-        <h2 class="text-sm text-gray-500 px-5 truncate">
+        <h2 class="text-sm text-gray-500 px-5 truncate mt-0.5">
           {{ subtitle }}
         </h2>
         <div class="overflow-hidden" style="aspect-ratio: 16 / 9">
@@ -20,7 +20,7 @@
             height="360"
           />
         </div>
-        <p class="text-sm text-gray-200 mt-3 overflow-hidden px-5">
+        <p class="sm:text-sm text-gray-200 mt-3 overflow-hidden px-5">
           {{ description }}
         </p>
       </div>
