@@ -4,7 +4,7 @@
       <Hero />
     </Section>
     <Section class="bg-gray-800">
-      <div class="py-5">
+      <div class="pt-3 pb-5">
         <Skills />
       </div>
     </Section>
