@@ -70,6 +70,7 @@ export default {
       '~/components/home/skills',
       '~/components/home/university',
       '~/components/icons',
+      '~/components/icons/solid',
       '~/components/navbar',
       '~/components/posts',
       '~/components/section',
