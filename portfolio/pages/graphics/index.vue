@@ -1,9 +1,10 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-4xl sm:text-5xl text-gray-100 uppercase font-black">
-        three.js example
+      <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
+        Graphics example
       </h1>
+      <h1 class="text-lg text-gray-200 mt-2">For keyboard and mouse users</h1>
       <GraphicsExample class="mt-5 sm:mt-8" />
     </Section>
   </div>
