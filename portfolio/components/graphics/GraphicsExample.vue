@@ -26,14 +26,15 @@
         id="blocker"
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
-        <div id="instructions" class="bg-gray-50 px-8 py-5">
+        <div id="instructions" class="bg-gray-50 rounded shadow px-8 py-5">
           <div class="flex flex-col">
-            <h2 class="text-xl font-semibold text-center">Click to play</h2>
-            <div class="mt-1">
-              <p class="text-center">Move: WASD<br /></p>
-              <p class="text-center">Jump: Space<br /></p>
-              <p class="text-center">Look: Mouse<br /></p>
-              <p class="text-center">Exit: Esc<br /></p>
+            <h2 class="text-xl font-semibold text-center text-gray-900">
+              Click to play
+            </h2>
+            <div class="mt-1 text-gray-700">
+              <p class="text-center">Move: WASD, Space</p>
+              <p class="text-center">Camera: Mouse</p>
+              <p class="text-center">Pause: Esc</p>
             </div>
           </div>
         </div>
@@ -43,7 +44,22 @@
 </template>
 
 <script>
-import * as THREE from 'three'
+import {
+  Vector3,
+  Color,
+  PerspectiveCamera,
+  Scene,
+  Fog,
+  HemisphereLight,
+  Raycaster,
+  PlaneGeometry,
+  Float32BufferAttribute,
+  MeshBasicMaterial,
+  Mesh,
+  BoxGeometry,
+  MeshPhongMaterial,
+  WebGLRenderer,
+} from 'three'
 import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js'
 import { performance } from 'universal-perf-hooks'
 
@@ -63,10 +79,10 @@ let gravity_constant = 1.375
 let jump_velocity = 50
 
 let prevTime = performance.now()
-const velocity = new THREE.Vector3()
-const direction = new THREE.Vector3()
-const vertex = new THREE.Vector3()
-const color = new THREE.Color()
+const velocity = new Vector3()
+const direction = new Vector3()
+const vertex = new Vector3()
+const color = new Color()
 
 export default {
   name: 'ThreeTest',
@@ -80,7 +96,7 @@ export default {
   methods: {
     init() {
       const container = document.getElementById('canvas')
-      camera = new THREE.PerspectiveCamera(
+      camera = new PerspectiveCamera(
         70,
         container.clientWidth / container.clientHeight,
         1,
@@ -88,11 +104,11 @@ export default {
       )
       camera.position.y = 10
 
-      scene = new THREE.Scene()
-      scene.background = new THREE.Color(0xffffff)
-      scene.fog = new THREE.Fog(0xffffff, 0, 750)
+      scene = new Scene()
+      scene.background = new Color(0xffffff)
+      scene.fog = new Fog(0xffffff, 0, 750)
 
-      const light = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75)
+      const light = new HemisphereLight(0xeeeeff, 0x777788, 0.75)
       light.position.set(0.5, 1, 0.75)
       scene.add(light)
 
@@ -173,16 +189,11 @@ export default {
       document.addEventListener('keydown', onKeyDown)
       document.addEventListener('keyup', onKeyUp)
 
-      raycaster = new THREE.Raycaster(
-        new THREE.Vector3(),
-        new THREE.Vector3(0, -1, 0),
-        0,
-        10
-      )
+      raycaster = new Raycaster(new Vector3(), new Vector3(0, -1, 0), 0, 10)
 
       // floor
 
-      let floorGeometry = new THREE.PlaneGeometry(2000, 2000, 100, 100)
+      let floorGeometry = new PlaneGeometry(2000, 2000, 100, 100)
       floorGeometry.rotateX(-Math.PI / 2)
 
       // vertex displacement
@@ -215,17 +226,17 @@ export default {
 
       floorGeometry.setAttribute(
         'color',
-        new THREE.Float32BufferAttribute(colorsFloor, 3)
+        new Float32BufferAttribute(colorsFloor, 3)
       )
 
-      const floorMaterial = new THREE.MeshBasicMaterial({ vertexColors: true })
+      const floorMaterial = new MeshBasicMaterial({ vertexColors: true })
 
-      const floor = new THREE.Mesh(floorGeometry, floorMaterial)
+      const floor = new Mesh(floorGeometry, floorMaterial)
       scene.add(floor)
 
       // objects
 
-      const boxGeometry = new THREE.BoxGeometry(5, 5, 5).toNonIndexed()
+      const boxGeometry = new BoxGeometry(5, 5, 5).toNonIndexed()
 
       position = boxGeometry.attributes.position
       const colorsBox = []
@@ -241,11 +252,11 @@ export default {
 
       boxGeometry.setAttribute(
         'color',
-        new THREE.Float32BufferAttribute(colorsBox, 3)
+        new Float32BufferAttribute(colorsBox, 3)
       )
 
       for (let i = 0; i < 64; i++) {
-        const boxMaterial = new THREE.MeshPhongMaterial({
+        const boxMaterial = new MeshPhongMaterial({
           specular: 0xffffff,
           flatShading: true,
           vertexColors: true,
@@ -256,7 +267,7 @@ export default {
           Math.random() * 0.25 + 0.75
         )
 
-        const box = new THREE.Mesh(boxGeometry, boxMaterial)
+        const box = new Mesh(boxGeometry, boxMaterial)
         box.position.x = Math.floor(Math.random() * 10 - 10) * 5
         box.position.y = Math.floor(Math.random() * 10) * 5 + 2.5
         box.position.z = Math.floor(Math.random() * 10 - 10) * 5
@@ -266,8 +277,7 @@ export default {
       }
 
       //
-
-      renderer = new THREE.WebGLRenderer({ antialias: true })
+      renderer = new WebGLRenderer({ antialias: true })
       renderer.setPixelRatio(window.devicePixelRatio)
       renderer.setSize(container.clientWidth, container.clientHeight)
       container.appendChild(renderer.domElement)
