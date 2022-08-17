@@ -2,7 +2,7 @@
   <div>
     <div
       id="canvas"
-      class="relative border-2 border-gray-200 border-dashed rounded-xl overflow-hidden mx-auto"
+      class="relative ring-2 ring-gray-200 rounded overflow-hidden mx-auto"
       style="height: 480px; caret-color: transparent"
     >
       <div
