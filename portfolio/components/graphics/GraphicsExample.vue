@@ -134,6 +134,9 @@ export default {
       scene.add(controls.getObject())
 
       const onKeyDown = function (event) {
+        if (controls.isLocked) {
+          event.preventDefault()
+        }
         switch (event.code) {
           case 'ArrowUp':
           case 'KeyW':
@@ -163,6 +166,9 @@ export default {
       }
 
       const onKeyUp = function (event) {
+        if (controls.isLocked) {
+          event.preventDefault()
+        }
         switch (event.code) {
           case 'ArrowUp':
           case 'KeyW':
@@ -186,8 +192,8 @@ export default {
         }
       }
 
-      document.addEventListener('keydown', onKeyDown)
-      document.addEventListener('keyup', onKeyUp)
+      document.addEventListener('keydown', (e) => onKeyDown(e))
+      document.addEventListener('keyup', (e) => onKeyUp(e))
 
       raycaster = new Raycaster(new Vector3(), new Vector3(0, -1, 0), 0, 10)
 
