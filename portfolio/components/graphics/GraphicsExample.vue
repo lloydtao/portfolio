@@ -58,8 +58,8 @@ let moveLeft = false
 let moveRight = false
 let canJump = false
 
-let gravity_constant = 1.375
-let jump_velocity = 50
+const gravityConstant = 1.375
+const jumpVelocity = 50
 
 let prevTime = performance.now()
 const velocity = new Vector3()
@@ -142,7 +142,7 @@ export default {
             break
 
           case 'Space':
-            if (canJump === true) velocity.y += jump_velocity
+            if (canJump === true) velocity.y += jumpVelocity
             canJump = false
             break
         }
@@ -292,7 +292,7 @@ export default {
 
         velocity.x -= velocity.x * 10.0 * delta
         velocity.z -= velocity.z * 10.0 * delta
-        velocity.y -= gravity_constant * 100.0 * delta // 100.0 = mass
+        velocity.y -= gravityConstant * 100.0 * delta // 100.0 = mass
 
         direction.z = Number(moveForward) - Number(moveBackward)
         direction.x = Number(moveRight) - Number(moveLeft)
