@@ -6,32 +6,15 @@
       style="height: 480px; caret-color: transparent"
     >
       <div
-        class="absolute bottom-0 left-1/2 pointer-events-none"
-        style="width: 360px"
-      >
-        <img
-          src="https://www.pngkey.com/png/full/14-143498_file-history-v-ak47-cs-go.png"
-          class="pointer-events-none"
-        />
-      </div>
-      <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-      >
-        <img
-          src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fb82ffca3fb5ad.png"
-          class="w-8 pointer-events-none"
-        />
-      </div>
-      <div
         id="blocker"
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
         <div id="instructions" class="bg-gray-50 rounded shadow px-8 py-5">
           <div class="flex flex-col">
-            <h2 class="text-xl font-semibold text-center text-gray-900">
+            <h2 class="text-lg font-semibold text-gray-700 mx-auto">
               Click to play
             </h2>
-            <div class="mt-1 text-gray-700">
+            <div class="text-sm text-gray-900 mt-1">
               <p class="text-center">Move: WASD, Space</p>
               <p class="text-center">Camera: Mouse</p>
               <p class="text-center">Pause: Esc</p>
