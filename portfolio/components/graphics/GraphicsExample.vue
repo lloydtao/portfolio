@@ -2,135 +2,335 @@
   <div>
     <div
       id="canvas"
-      class="flex h-64 border-2 border-gray-200 border-dashed rounded-xl bg-black bg-opacity-30"
-    />
-    <div class="flex justify-center space-x-3 mt-5">
-      <button
-        class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
-        @click="decreaseCubeSize"
+      class="relative border-2 border-gray-200 border-dashed rounded-xl overflow-hidden mx-auto"
+      style="height: 480px; caret-color: transparent"
+    >
+      <div
+        class="absolute bottom-0 left-1/2 pointer-events-none"
+        style="width: 360px"
       >
-        <span class="text-lg text-gray-900 font-bold">
-          <IconWrapper>
-            <MinusSm />
-          </IconWrapper>
-        </span>
-      </button>
-      <button
-        class="rounded shadow bg-gray-50 hover:bg-gray-400 duration-100 px-3 py-0.5"
-        @click="increaseCubeSize"
+        <img
+          src="https://www.pngkey.com/png/full/14-143498_file-history-v-ak47-cs-go.png"
+          class="pointer-events-none"
+        />
+      </div>
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 pointer-events-none"
       >
-        <span class="text-lg text-gray-900 font-bold">
-          <IconWrapper>
-            <PlusSm />
-          </IconWrapper>
-        </span>
-      </button>
+        <img
+          src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/8fb82ffca3fb5ad.png"
+          class="w-8 pointer-events-none"
+        />
+      </div>
+      <div
+        id="blocker"
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+      >
+        <div id="instructions" class="bg-gray-50 px-8 py-5">
+          <div class="flex flex-col">
+            <h2 class="text-xl font-semibold text-center">Click to play</h2>
+            <div class="mt-1">
+              <p class="text-center">Move: WASD<br /></p>
+              <p class="text-center">Jump: Space<br /></p>
+              <p class="text-center">Look: Mouse<br /></p>
+              <p class="text-center">Exit: Esc<br /></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import * as Three from 'three'
+import * as THREE from 'three'
+import { PointerLockControls } from 'three/examples/jsm/controls/PointerLockControls.js'
+import { performance } from 'universal-perf-hooks'
+
+let camera, scene, renderer, controls
+
+const objects = []
+
+let raycaster
+
+let moveForward = false
+let moveBackward = false
+let moveLeft = false
+let moveRight = false
+let canJump = false
+
+let gravity_constant = 1.375
+let jump_velocity = 50
+
+let prevTime = performance.now()
+const velocity = new THREE.Vector3()
+const direction = new THREE.Vector3()
+const vertex = new THREE.Vector3()
+const color = new THREE.Color()
 
 export default {
   name: 'ThreeTest',
   data() {
-    return {
-      camera: null,
-      scene: null,
-      renderer: null,
-      mesh: null,
-      cube: {
-        updated: false,
-        width: 0.3,
-        height: 0.3,
-        depth: 0.3,
-      },
-    }
+    return {}
   },
   mounted() {
     this.init()
     this.animate()
-    window.addEventListener('resize', this.resize, false)
   },
   methods: {
     init() {
       const container = document.getElementById('canvas')
-
-      this.camera = new Three.PerspectiveCamera(
+      camera = new THREE.PerspectiveCamera(
         70,
         container.clientWidth / container.clientHeight,
-        0.01,
+        1,
+        1000
+      )
+      camera.position.y = 10
+
+      scene = new THREE.Scene()
+      scene.background = new THREE.Color(0xffffff)
+      scene.fog = new THREE.Fog(0xffffff, 0, 750)
+
+      const light = new THREE.HemisphereLight(0xeeeeff, 0x777788, 0.75)
+      light.position.set(0.5, 1, 0.75)
+      scene.add(light)
+
+      controls = new PointerLockControls(camera, document.body)
+
+      const blocker = document.getElementById('blocker')
+      const instructions = document.getElementById('instructions')
+
+      instructions.addEventListener('click', function () {
+        controls.lock()
+      })
+
+      controls.addEventListener('lock', function () {
+        instructions.style.display = 'none'
+        blocker.style.display = 'none'
+      })
+
+      controls.addEventListener('unlock', function () {
+        blocker.style.display = 'block'
+        instructions.style.display = ''
+      })
+
+      scene.add(controls.getObject())
+
+      const onKeyDown = function (event) {
+        switch (event.code) {
+          case 'ArrowUp':
+          case 'KeyW':
+            moveForward = true
+            break
+
+          case 'ArrowLeft':
+          case 'KeyA':
+            moveLeft = true
+            break
+
+          case 'ArrowDown':
+          case 'KeyS':
+            moveBackward = true
+            break
+
+          case 'ArrowRight':
+          case 'KeyD':
+            moveRight = true
+            break
+
+          case 'Space':
+            if (canJump === true) velocity.y += jump_velocity
+            canJump = false
+            break
+        }
+      }
+
+      const onKeyUp = function (event) {
+        switch (event.code) {
+          case 'ArrowUp':
+          case 'KeyW':
+            moveForward = false
+            break
+
+          case 'ArrowLeft':
+          case 'KeyA':
+            moveLeft = false
+            break
+
+          case 'ArrowDown':
+          case 'KeyS':
+            moveBackward = false
+            break
+
+          case 'ArrowRight':
+          case 'KeyD':
+            moveRight = false
+            break
+        }
+      }
+
+      document.addEventListener('keydown', onKeyDown)
+      document.addEventListener('keyup', onKeyUp)
+
+      raycaster = new THREE.Raycaster(
+        new THREE.Vector3(),
+        new THREE.Vector3(0, -1, 0),
+        0,
         10
       )
-      this.camera.position.z = 1
 
-      this.scene = new Three.Scene()
+      // floor
 
-      const geometry = new Three.BoxGeometry(
-        this.cube.width,
-        this.cube.height,
-        this.cube.depth
+      let floorGeometry = new THREE.PlaneGeometry(2000, 2000, 100, 100)
+      floorGeometry.rotateX(-Math.PI / 2)
+
+      // vertex displacement
+
+      let position = floorGeometry.attributes.position
+
+      for (let i = 0, l = position.count; i < l; i++) {
+        vertex.fromBufferAttribute(position, i)
+
+        vertex.x += Math.random() * 20 - 10
+        vertex.y += Math.random() * 2
+        vertex.z += Math.random() * 20 - 10
+
+        position.setXYZ(i, vertex.x, vertex.y, vertex.z)
+      }
+
+      floorGeometry = floorGeometry.toNonIndexed() // ensure each face has unique vertices
+
+      position = floorGeometry.attributes.position
+      const colorsFloor = []
+
+      for (let i = 0, l = position.count; i < l; i++) {
+        color.setHSL(
+          Math.random() * 0.3 + 0.5,
+          0.75,
+          Math.random() * 0.25 + 0.75
+        )
+        colorsFloor.push(color.r, color.g, color.b)
+      }
+
+      floorGeometry.setAttribute(
+        'color',
+        new THREE.Float32BufferAttribute(colorsFloor, 3)
       )
-      const material = new Three.MeshNormalMaterial()
 
-      this.mesh = new Three.Mesh(geometry, material)
-      this.scene.add(this.mesh)
+      const floorMaterial = new THREE.MeshBasicMaterial({ vertexColors: true })
 
-      this.renderer = new Three.WebGLRenderer({ antialias: true, alpha: true })
-      this.renderer.setSize(container.clientWidth, container.clientHeight)
-      container.appendChild(this.renderer.domElement)
+      const floor = new THREE.Mesh(floorGeometry, floorMaterial)
+      scene.add(floor)
+
+      // objects
+
+      const boxGeometry = new THREE.BoxGeometry(5, 5, 5).toNonIndexed()
+
+      position = boxGeometry.attributes.position
+      const colorsBox = []
+
+      for (let i = 0, l = position.count; i < l; i++) {
+        color.setHSL(
+          Math.random() * 0.3 + 0.5,
+          0.75,
+          Math.random() * 0.25 + 0.75
+        )
+        colorsBox.push(color.r, color.g, color.b)
+      }
+
+      boxGeometry.setAttribute(
+        'color',
+        new THREE.Float32BufferAttribute(colorsBox, 3)
+      )
+
+      for (let i = 0; i < 64; i++) {
+        const boxMaterial = new THREE.MeshPhongMaterial({
+          specular: 0xffffff,
+          flatShading: true,
+          vertexColors: true,
+        })
+        boxMaterial.color.setHSL(
+          Math.random() * 0.2 + 0.5,
+          0.75,
+          Math.random() * 0.25 + 0.75
+        )
+
+        const box = new THREE.Mesh(boxGeometry, boxMaterial)
+        box.position.x = Math.floor(Math.random() * 10 - 10) * 5
+        box.position.y = Math.floor(Math.random() * 10) * 5 + 2.5
+        box.position.z = Math.floor(Math.random() * 10 - 10) * 5
+
+        scene.add(box)
+        objects.push(box)
+      }
+
+      //
+
+      renderer = new THREE.WebGLRenderer({ antialias: true })
+      renderer.setPixelRatio(window.devicePixelRatio)
+      renderer.setSize(container.clientWidth, container.clientHeight)
+      container.appendChild(renderer.domElement)
+
+      //
+
+      window.addEventListener('resize', this.onWindowResize)
     },
     animate() {
       requestAnimationFrame(this.animate)
-      this.mesh.rotation.x += 0.01
-      this.mesh.rotation.y += 0.02
-      if (this.cube.updated) {
-        this.mesh.geometry.dispose()
-        this.mesh.geometry = new Three.BoxGeometry(
-          this.cube.width,
-          this.cube.height,
-          this.cube.depth
-        )
-        this.cube.updated = false
+
+      const time = performance.now()
+
+      if (controls.isLocked === true) {
+        raycaster.ray.origin.copy(controls.getObject().position)
+        raycaster.ray.origin.y -= 2.5
+
+        const intersections = raycaster.intersectObjects(objects, false)
+
+        const onObject = intersections.length > 0
+
+        const delta = (time - prevTime) / 1000
+
+        velocity.x -= velocity.x * 10.0 * delta
+        velocity.z -= velocity.z * 10.0 * delta
+        velocity.y -= gravity_constant * 100.0 * delta // 100.0 = mass
+
+        direction.z = Number(moveForward) - Number(moveBackward)
+        direction.x = Number(moveRight) - Number(moveLeft)
+        direction.normalize() // this ensures consistent movements in all directions
+
+        if (moveForward || moveBackward)
+          velocity.z -= direction.z * 400.0 * delta
+        if (moveLeft || moveRight) velocity.x -= direction.x * 400.0 * delta
+
+        if (onObject === true) {
+          velocity.y = Math.max(0, velocity.y)
+          canJump = true
+        }
+
+        controls.moveRight(-velocity.x * delta)
+        controls.moveForward(-velocity.z * delta)
+
+        controls.getObject().position.y += velocity.y * delta // new behavior
+
+        if (controls.getObject().position.y < 10) {
+          velocity.y = 0
+          controls.getObject().position.y = 10
+
+          canJump = true
+        }
       }
-      this.renderer.render(this.scene, this.camera)
+
+      prevTime = time
+
+      renderer.render(scene, camera)
     },
-    resize() {
+    onWindowResize() {
       const container = document.getElementById('canvas')
+      camera.aspect = container.clientWidth / container.clientHeight
+      camera.updateProjectionMatrix()
 
-      const SCREEN_WIDTH = container.clientWidth
-      const SCREEN_HEIGHT = container.clientHeight
-
-      this.camera.aspect = SCREEN_WIDTH / SCREEN_HEIGHT
-      this.camera.updateProjectionMatrix()
-      this.renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT)
-    },
-    decreaseCubeSize() {
-      if (
-        this.cube.width < 0.15 ||
-        this.cube.height < 0.15 ||
-        this.cube.depth < 0.15
-      ) {
-        return
-      }
-      this.cube.width = this.cube.width - 0.1
-      this.cube.height = this.cube.height - 0.1
-      this.cube.depth = this.cube.depth - 0.1
-      this.cube.updated = true
-    },
-    increaseCubeSize() {
-      if (
-        this.cube.width > 0.45 ||
-        this.cube.height > 0.45 ||
-        this.cube.depth > 0.45
-      ) {
-        return
-      }
-      this.cube.width = this.cube.width + 0.1
-      this.cube.height = this.cube.height + 0.1
-      this.cube.depth = this.cube.depth + 0.1
-      this.cube.updated = true
+      renderer.setSize(container.clientWidth, container.clientHeight)
     },
   },
 }

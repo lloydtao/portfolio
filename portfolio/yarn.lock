@@ -3286,6 +3286,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.46.tgz#26047602eefa47b36759d9ebb1b55ad08ce97a73"
   integrity sha512-x+sfpb2dMrhCQPL4NAGs64Z9hh0t72aP0dg+PuZidmPr/0Gj5ELQTjD/t46dq3DF/8ZvSHOaIyDIbAsdPshyVQ==
 
+"@types/node@^14.14.37":
+  version "14.18.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.18.24.tgz#406b220dc748947e1959d8a38a75979e87166704"
+  integrity sha512-aJdn8XErcSrfr7k8ZDDfU6/2OgjZcB2Fu9d+ESK8D7Oa5mtsv8Fa8GpcwTA0v60kuZBaalKPzuzun4Ov1YWO/w==
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
@@ -15603,6 +15608,13 @@ unist-util-visit@2.0.3, unist-util-visit@^2.0.0:
     "@types/unist" "^2.0.0"
     unist-util-is "^4.0.0"
     unist-util-visit-parents "^3.0.0"
+
+universal-perf-hooks@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/universal-perf-hooks/-/universal-perf-hooks-1.0.1.tgz#be360fb2f96048ba71cc1afb3950f8bb70a05925"
+  integrity sha512-XPbS20JvSJBIY5XOVS0n+TOEVysUuuFhiWFVLAPh9iRSdH5R2rWOVWlXMwiaUD8TVtMiuVDedmfyIYQdu+gkrw==
+  dependencies:
+    "@types/node" "^14.14.37"
 
 universalify@^0.1.0, universalify@^0.1.2:
   version "0.1.2"
