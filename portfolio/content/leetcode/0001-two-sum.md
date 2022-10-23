@@ -10,8 +10,8 @@ published: true
 
 Method: Take each number and check if its complement has been seen before. If not, add it to the list of known complements along with its index.
 
-Time complexity: O(n)
-Space complexity: O(n)
+- Time complexity: O(n)
+- Space complexity: O(n)
 
 ```python
 class Solution:
@@ -42,8 +42,8 @@ class Solution:
 
 Method: Take each pair of numbers and see if they add up to the target.
 
-Time complexity: O(n²)
-Space complexity: O(1)
+- Time complexity: O(n²)
+- Space complexity: O(1)
 
 ```python
 class Solution:
