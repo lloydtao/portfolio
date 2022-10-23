@@ -21,13 +21,7 @@ export default Vue.extend({
   name: 'LeetcodePage',
   async asyncData({ $content }) {
     const leetcode = await $content('leetcode')
-      .only([
-        'slug',
-        'title',
-        'series',
-        'publishedAt',
-        'published',
-      ])
+      .only(['slug', 'title', 'series', 'publishedAt', 'published'])
       .sortBy('publishedAt', 'desc')
       .fetch()
     return {
