@@ -6,6 +6,10 @@ publishedAt: '2022-10-23T09:00:00.000Z'
 published: true
 ---
 
+## Python
+
+Solution walkthrough: https://twitter.com/lloydtao/status/1584288569622790145
+
 ### 🥇 Hash table - O(n)
 
 Method: Take each number and check if its complement has been seen before. If not, add it to the list of known complements along with its index.
