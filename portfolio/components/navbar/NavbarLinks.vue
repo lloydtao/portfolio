@@ -1,16 +1,16 @@
 <template>
   <div class="hidden sm:flex items-center space-x-5 md:space-x-8">
     <NuxtLink
-      to="/blog/"
-      class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
-    >
-      Blog
-    </NuxtLink>
-    <NuxtLink
       to="/projects/"
       class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
     >
       Projects
+    </NuxtLink>
+    <NuxtLink
+      to="/leetcode/"
+      class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
+    >
+      Leetcode
     </NuxtLink>
     <NuxtLink
       to="/contact/"
