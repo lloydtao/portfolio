@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/leetcode", {data:[{leetcode:[{slug:"0001-two-sum",title:"1. Two Sum",series:"Easy",publishedAt:"2022-10-23T09:00:00.000Z",published:true}],_img:{"/_ipx/f_webp,s_32x32/images/logo.png":"\u002F_nuxt\u002Fimage\u002Fc04f6a.webp"}}],fetch:{},mutations:void 0});
