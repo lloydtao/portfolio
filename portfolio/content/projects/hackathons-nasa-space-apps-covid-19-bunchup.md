@@ -1,7 +1,7 @@
 ---
-slug: 'nasa-space-apps-covid-19-challenge-bunchup'
-title: 'Bunchup'
-subtitle: 'NASA Space Apps COVID-19 Challenge'
+slug: 'hackathons-nasa-space-apps-covid-19-bunchup'
+title: 'NASA Space Apps COVID-19'
+subtitle: 'Bunchup'
 series: 'Hackathons'
 description: 'Online community builder and event scheduler to combat loneliness'
 localimage: '/images/bunchup.png'

@@ -1,7 +1,7 @@
 ---
-slug: 'junction-2021-keepchat-adaptive-hate-speech-filtering'
-title: 'KeepChat'
-subtitle: 'Junction 2021'
+slug: 'hackathons-junction-2021-keepchat-adaptive-hate-speech-filtering'
+title: 'Junction 2021'
+subtitle: 'KeepChat'
 series: 'Hackathons'
 description: 'Programmable chat API with adaptive hate speech filtering'
 localimage: '/images/keepchat.png'
