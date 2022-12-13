@@ -12,10 +12,21 @@
         <PostGrid :posts="hackathons" route="projects-slug" />
       </div>
     </Section>
+    <Section>
+      <h2 class="mt-8 text-2xl sm:text-3xl text-gray-200 uppercase font-black">
+        Personal
+      </h2>
+      <p class="text-lg text-gray-300 mt-3">
+        Projects for skill building and technical exploration
+      </p>
+      <div class="mt-5">
+        <PostGrid :posts="personal" route="projects-slug" />
+      </div>
+    </Section>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
@@ -35,8 +46,23 @@ export default Vue.extend({
       .where({ series: 'Hackathons' })
       .sortBy('publishedAt', 'desc')
       .fetch()
+    const personal = await $content('projects')
+      .only([
+        'slug',
+        'title',
+        'subtitle',
+        'description',
+        'series',
+        'localimage',
+        'publishedAt',
+        'published',
+      ])
+      .where({ series: 'Personal' })
+      .sortBy('publishedAt', 'desc')
+      .fetch()
     return {
       hackathons,
+      personal,
     }
   },
 })
