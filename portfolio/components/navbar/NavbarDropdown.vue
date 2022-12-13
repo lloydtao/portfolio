@@ -64,13 +64,6 @@
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
-              :to="`/leetcode/`"
-              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-200 font-semibold px-8 py-4"
-              >Leetcode</NuxtLink
-            >
-          </li>
-          <li class="flex" @click="showMenu = !showMenu">
-            <NuxtLink
               :to="`/contact/`"
               class="flex flex-1 text-lg text-gray-700 hover:bg-gray-200 font-semibold px-8 py-4"
               >Contact</NuxtLink

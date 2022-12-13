@@ -14,14 +14,6 @@
       </li>
       <li>
         <NuxtLink
-          to="/leetcode/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-        >
-          Leetcode
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
           to="/contact/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
@@ -52,6 +44,14 @@
     <ul class="flex flex-col">
       <li>
         <p class="text-gray-100 font-semibold text-sm">Other</p>
+      </li>
+      <li>
+        <NuxtLink
+          to="/leetcode/"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+        >
+          Leetcode
+        </NuxtLink>
       </li>
       <li>
         <NuxtLink
