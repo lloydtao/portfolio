@@ -41,31 +41,31 @@
         }"
       >
         <ul
-          class="flex flex-col bg-gray-100 w-full rounded shadow-md overflow-hidden"
+          class="flex flex-col bg-gray-50 w-full rounded shadow-md overflow-hidden"
         >
           <li class="flex">
-            <h3 class="flex flex-1 text-gray-600 font-semibold px-5 py-4">
+            <h3 class="flex flex-1 text-gray-800 font-semibold px-5 py-4">
               Navigation
             </h3>
           </li>
           <li class="flex border-t" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/`"
-              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-200 font-semibold px-8 py-4"
+              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-100 font-semibold px-8 py-4"
               >Home</NuxtLink
             >
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/projects/`"
-              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-200 font-semibold px-8 py-4"
+              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-100 font-semibold px-8 py-4"
               >Projects</NuxtLink
             >
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/contact/`"
-              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-200 font-semibold px-8 py-4"
+              class="flex flex-1 text-lg text-gray-700 hover:bg-gray-100 font-semibold px-8 py-4"
               >Contact</NuxtLink
             >
           </li>
