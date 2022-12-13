@@ -7,12 +7,6 @@
       Projects
     </NuxtLink>
     <NuxtLink
-      to="/leetcode/"
-      class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
-    >
-      Leetcode
-    </NuxtLink>
-    <NuxtLink
       to="/contact/"
       class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
     >
