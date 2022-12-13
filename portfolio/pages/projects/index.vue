@@ -6,8 +6,22 @@
       </h1>
       <p class="text-lg text-gray-300 mt-3">How I've kept myself busy</p>
       <h2 class="text-2xl sm:text-3xl text-gray-200 uppercase font-black mt-5">
+        Gridlink
+      </h2>
+      <p class="text-lg text-gray-300 mt-3">
+        My journey in building a production-ready web application
+      </p>
+      <div class="mt-5">
+        <PostGrid :posts="gridlink" route="projects-slug" />
+      </div>
+    </Section>
+    <Section>
+      <h2 class="mt-8 text-2xl sm:text-3xl text-gray-200 uppercase font-black">
         Hackathons
       </h2>
+      <p class="text-lg text-gray-300 mt-3">
+        Rapid and collaborative engineering challenges
+      </p>
       <div class="mt-5">
         <PostGrid :posts="hackathons" route="projects-slug" />
       </div>
@@ -32,6 +46,20 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'ProjectPage',
   async asyncData({ $content }) {
+    const gridlink = await $content('projects')
+      .only([
+        'slug',
+        'title',
+        'subtitle',
+        'description',
+        'series',
+        'localimage',
+        'publishedAt',
+        'published',
+      ])
+      .where({ series: 'Gridlink' })
+      .sortBy('publishedAt', 'desc')
+      .fetch()
     const hackathons = await $content('projects')
       .only([
         'slug',
@@ -61,6 +89,7 @@ export default Vue.extend({
       .sortBy('publishedAt', 'desc')
       .fetch()
     return {
+      gridlink,
       hackathons,
       personal,
     }
