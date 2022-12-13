@@ -6,14 +6,6 @@
       </li>
       <li>
         <NuxtLink
-          to="/blog/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
-        >
-          Blog
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
           to="/projects/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
@@ -22,18 +14,18 @@
       </li>
       <li>
         <NuxtLink
-          to="/contact/"
+          to="/leetcode/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
-          Contact
+          Leetcode
         </NuxtLink>
       </li>
       <li>
         <NuxtLink
-          to="/graphics/"
+          to="/contact/"
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
-          Graphics
+          Contact
         </NuxtLink>
       </li>
     </ul>
@@ -54,6 +46,19 @@
           class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
         >
           Storybook
+        </NuxtLink>
+      </li>
+    </ul>
+    <ul class="flex flex-col">
+      <li>
+        <p class="text-gray-100 font-semibold text-sm">Other</p>
+      </li>
+      <li>
+        <NuxtLink
+          to="/graphics/"
+          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+        >
+          Graphics
         </NuxtLink>
       </li>
     </ul>
