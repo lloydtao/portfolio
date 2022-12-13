@@ -70,7 +70,7 @@
           <span class="text-xl font-semibold">GitHub</span>
         </HeroButton>
         <HeroButton
-          href="https://linkedin.com/in/lloydtao/"
+          href="https://dev.to/tao/"
           class="bg-devto-primary hover:bg-devto-lighter duration-100"
         >
           <IconWrapper>
