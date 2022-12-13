@@ -5,17 +5,17 @@
         class="h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 py-3 duration-100"
       >
         <h1 class="font-semibold text-white px-5">{{ title }}</h1>
-        <h2 class="text-sm text-gray-300 px-5">
+        <h2 class="text-sm text-gray-300 px-5 mt-0.5">
           {{ formatDate(publishedAt) }}
         </h2>
-        <h2 class="text-sm text-gray-500 px-5 truncate mt-0.5">
+        <h2 class="text-sm text-gray-500 px-5 truncate mt-1 mb-3">
           {{ subtitle }}
         </h2>
         <div class="overflow-hidden" style="aspect-ratio: 16 / 9">
           <img
             :src="localimage"
             alt="Cover image placeholder"
-            class="w-full object-cover mt-3"
+            class="w-full object-cover"
             width="640"
             height="360"
           />
