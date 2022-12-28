@@ -39,13 +39,19 @@
       "url": "/portfolio?source=pwa"
     },
     {
-      "name": "Articles",
-      "short_name": "Articles",
-      "description": "Visit the articles page",
-      "url": "/articles?source=pwa"
+      "name": "Leetcode",
+      "short_name": "Leetcode",
+      "description": "Visit the leetcode page",
+      "url": "/leetcode?source=pwa"
+    },
+    {
+      "name": "Contact",
+      "short_name": "Contact",
+      "description": "Visit the contact page",
+      "url": "/contact?source=pwa"
     }
   ],
-  "description": "Weather forecast information",
+  "description": "yung software engineer ™",
   "screenshots": [
     {
       "src": "/screenshot.png",
