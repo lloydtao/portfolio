@@ -2,13 +2,13 @@
   <li class="w-full">
     <NuxtLink :to="{ name: route, params: { slug: slug } }">
       <div
-        class="h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 py-3 duration-100"
+        class="h-full border border-gray-600 bg-gray-800 py-3 duration-100 hover:border-gray-500 hover:bg-gray-700"
       >
-        <h1 class="font-semibold text-white px-5">{{ title }}</h1>
-        <h2 class="text-sm text-gray-300 px-5 mt-0.5">
+        <h1 class="px-5 font-semibold text-white">{{ title }}</h1>
+        <h2 class="mt-0.5 px-5 text-sm text-gray-300">
           {{ formatDate(publishedAt) }}
         </h2>
-        <h2 class="text-sm text-gray-500 px-5 truncate mt-1 mb-3">
+        <h2 class="mt-1 mb-3 truncate px-5 text-sm text-gray-500">
           {{ subtitle }}
         </h2>
         <div class="overflow-hidden" style="aspect-ratio: 16 / 9">
@@ -20,7 +20,7 @@
             height="360"
           />
         </div>
-        <p class="sm:text-sm text-gray-200 mt-3 overflow-hidden px-5">
+        <p class="mt-3 overflow-hidden px-5 text-gray-200 sm:text-sm">
           {{ description }}
         </p>
       </div>

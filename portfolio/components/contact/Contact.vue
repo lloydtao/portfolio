@@ -1,18 +1,18 @@
 <template>
   <div>
-    <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
+    <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
       Contact
     </h1>
     <div class="space-y-3">
-      <p class="text-gray-300 mt-5">
+      <p class="mt-5 text-gray-300">
         For professional enquiries, connect with me on LinkedIn:
       </p>
       <div
-        class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 space-y-3 sm:space-y-0"
+        class="flex flex-col space-x-0 space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0"
       >
         <HeroButton
           href="https://linkedin.com/in/lloydtao/"
-          class="bg-linkedin-primary hover:bg-linkedin-lighter duration-100"
+          class="bg-linkedin-primary duration-100 hover:bg-linkedin-lighter"
         >
           <IconWrapper>
             <LinkedIn />
@@ -22,13 +22,13 @@
       </div>
     </div>
     <div class="space-y-3">
-      <p class="text-gray-300 mt-5">Personal social media:</p>
+      <p class="mt-5 text-gray-300">Personal social media:</p>
       <div
-        class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 space-y-3 sm:space-y-0"
+        class="flex flex-col space-x-0 space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0"
       >
         <HeroButton
           href="https://twitter.com/lloydtao"
-          class="bg-twitter-websafe hover:bg-twitter-primary duration-100"
+          class="bg-twitter-websafe duration-100 hover:bg-twitter-primary"
         >
           <IconWrapper>
             <Twitter />
@@ -37,7 +37,7 @@
         </HeroButton>
         <HeroButton
           href="https://instagram.com/lloydtao"
-          class="bg-instagram-primary hover:bg-instagram-lighter duration-100"
+          class="bg-instagram-primary duration-100 hover:bg-instagram-lighter"
         >
           <IconWrapper>
             <Instagram />
@@ -46,7 +46,7 @@
         </HeroButton>
         <HeroButton
           href="https://open.spotify.com/user/11130532873"
-          class="bg-spotify-websafe hover:bg-spotify-lighter duration-100"
+          class="bg-spotify-websafe duration-100 hover:bg-spotify-lighter"
         >
           <IconWrapper>
             <Spotify />
@@ -56,13 +56,13 @@
       </div>
     </div>
     <div class="space-y-3">
-      <p class="text-gray-300 mt-5">Nerd stuff:</p>
+      <p class="mt-5 text-gray-300">Nerd stuff:</p>
       <div
-        class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 space-y-3 sm:space-y-0"
+        class="flex flex-col space-x-0 space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0"
       >
         <HeroButton
           href="https://github.com/lloydtao"
-          class="bg-github-primary hover:bg-github-lighter duration-100"
+          class="bg-github-primary duration-100 hover:bg-github-lighter"
         >
           <IconWrapper>
             <GitHub />
@@ -71,7 +71,7 @@
         </HeroButton>
         <HeroButton
           href="https://dev.to/tao/"
-          class="bg-devto-primary hover:bg-devto-lighter duration-100"
+          class="bg-devto-primary duration-100 hover:bg-devto-lighter"
         >
           <IconWrapper>
             <DevTo />

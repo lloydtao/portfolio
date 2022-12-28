@@ -1,10 +1,10 @@
 <template>
-  <div class="flex flex-col justify-start text-left items-start">
+  <div class="flex flex-col items-start justify-start text-left">
     <div class="flex flex-col lg:w-3/4 xl:w-2/3">
-      <h1 class="text-2xl sm:text-3xl text-gray-100 uppercase font-black">
+      <h1 class="text-2xl font-black uppercase text-gray-100 sm:text-3xl">
         University of Exeter
       </h1>
-      <p class="text-xl text-gray-100 mt-3 sm:mt-5">
+      <p class="mt-3 text-xl text-gray-100 sm:mt-5">
         BSc (Hons) Computer Science
       </p>
       <image-safe
@@ -12,9 +12,9 @@
         src="/images/hackathon-group.jpg"
         format="webp"
       />
-      <p class="text-gray-200 mt-5">Awards</p>
+      <p class="mt-5 text-gray-200">Awards</p>
       <ul
-        class="text-gray-200 mt-3 list-disc list-inside space-y-1.5 sm:space-y-0.5"
+        class="mt-3 list-inside list-disc space-y-1.5 text-gray-200 sm:space-y-0.5"
       >
         <li>
           <span class="italic">First place</span> - Met Office Hackathon 2020
@@ -49,9 +49,9 @@
           </span>
         </li>
       </ul>
-      <p class="text-gray-200 mt-5">Guest talks</p>
+      <p class="mt-5 text-gray-200">Guest talks</p>
       <ul
-        class="text-gray-200 mt-3 list-disc list-inside space-y-1.5 sm:space-y-0.5"
+        class="mt-3 list-inside list-disc space-y-1.5 text-gray-200 sm:space-y-0.5"
       >
         <li>
           <span class="italic">Source control</span> - Successful practises for
@@ -76,15 +76,15 @@
           </span>
         </li>
       </ul>
-      <p class="text-xl text-gray-100 mt-5 sm:mt-8">Exeter Computing Society</p>
+      <p class="mt-5 text-xl text-gray-100 sm:mt-8">Exeter Computing Society</p>
       <image-safe
         image-class="h-48 sm:h-64 object-cover mt-3 rounded-lg"
         src="/images/computing-society.jpg"
         format="webp"
       />
-      <p class="text-gray-200 mt-5">Committee</p>
+      <p class="mt-5 text-gray-200">Committee</p>
       <ul
-        class="text-gray-200 mt-3 list-disc list-inside space-y-1.5 sm:space-y-0.5"
+        class="mt-3 list-inside list-disc space-y-1.5 text-gray-200 sm:space-y-0.5"
       >
         <li>Social Secretary (2019-20)</li>
         <li>President (2021-22)</li>

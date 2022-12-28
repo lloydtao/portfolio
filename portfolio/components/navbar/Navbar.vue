@@ -1,8 +1,8 @@
 <template>
   <div class="flex">
-    <NavbarLogo class="justify-start flex-1" />
-    <NavbarLinks class="justify-center flex-1" />
-    <NavbarIcons class="justify-end flex-1" />
-    <NavbarDropdown class="justify-end flex-1" />
+    <NavbarLogo class="flex-1 justify-start" />
+    <NavbarLinks class="flex-1 justify-center" />
+    <NavbarIcons class="flex-1 justify-end" />
+    <NavbarDropdown class="flex-1 justify-end" />
   </div>
 </template>

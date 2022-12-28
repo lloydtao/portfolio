@@ -10,11 +10,11 @@
         format="webp"
       />
     </div>
-    <h1 class="text-4xl sm:text-5xl text-gray-100 uppercase font-black mt-5">
+    <h1 class="mt-5 text-4xl font-black uppercase text-gray-100 sm:text-5xl">
       Lewis Lloyd
     </h1>
-    <p class="text-gray-300 mt-3">yung software engineer &trade;</p>
-    <p class="text-lg sm:text-xl text-gray-200 mt-3">
+    <p class="mt-3 text-gray-300">yung software engineer &trade;</p>
+    <p class="mt-3 text-lg text-gray-200 sm:text-xl">
       Specialising in full-stack web applications and cloud architecture, with a
       dash of product management and technical strategy.
     </p>

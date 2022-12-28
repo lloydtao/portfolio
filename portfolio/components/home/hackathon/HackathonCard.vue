@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="bg-gray-900 hover:bg-gray-700 duration-200 rounded-lg shadow border border-gray-700 overflow-hidden"
+    class="overflow-hidden rounded-lg border border-gray-700 bg-gray-900 shadow duration-200 hover:bg-gray-700"
   >
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
@@ -15,12 +15,12 @@
         />
       </div>
       <div class="flex flex-1 flex-col px-5 py-4">
-        <p class="text-xl text-gray-100 font-semibold">
+        <p class="text-xl font-semibold text-gray-100">
           {{ title }}
         </p>
-        <h2 class="text-sm text-gray-400 mt-1">{{ date }}</h2>
-        <h2 class="text-lg text-gray-300 mt-2">{{ project }}</h2>
-        <p class="text-gray-400 mt-2">
+        <h2 class="mt-1 text-sm text-gray-400">{{ date }}</h2>
+        <h2 class="mt-2 text-lg text-gray-300">{{ project }}</h2>
+        <p class="mt-2 text-gray-400">
           {{ description }}
         </p>
         <div class="mt-3">

@@ -2,19 +2,19 @@
   <div>
     <div
       id="canvas"
-      class="relative ring-2 ring-gray-200 rounded overflow-hidden mx-auto"
+      class="relative mx-auto overflow-hidden rounded ring-2 ring-gray-200"
       style="height: 480px; caret-color: transparent"
     >
       <div
         id="blocker"
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
       >
-        <div id="instructions" class="bg-gray-50 rounded shadow px-8 py-5">
+        <div id="instructions" class="rounded bg-gray-50 px-8 py-5 shadow">
           <div class="flex flex-col">
-            <h2 class="text-lg font-semibold text-gray-700 mx-auto">
+            <h2 class="mx-auto text-lg font-semibold text-gray-700">
               Click to play
             </h2>
-            <div class="text-sm text-gray-900 mt-1">
+            <div class="mt-1 text-sm text-gray-900">
               <p class="text-center">Move: WASD, Space</p>
               <p class="text-center">Camera: Mouse</p>
               <p class="text-center">Pause: Esc</p>

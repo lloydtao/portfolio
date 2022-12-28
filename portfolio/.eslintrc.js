@@ -7,9 +7,10 @@ module.exports = {
   extends: [
     '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended',
+    'plugin:tailwindcss/recommended',
     'prettier',
   ],
-  plugins: [],
+  plugins: ['tailwindcss'],
   // add your custom rules here
   rules: { 'vue/multi-word-component-names': 0 },
 }

@@ -6,14 +6,14 @@
         class="absolute right-0 z-30 flex-none px-5"
         @click="showMenu = !showMenu"
         ><p
-          class="px-2 py-2 font-semibold tracking-wide text-gray-200 rounded hover:bg-gray-900 hover:bg-opacity-30"
+          class="rounded p-2 font-semibold tracking-wide text-gray-200 hover:bg-gray-900/30"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="h-6 w-6"
           >
             <path
               stroke-linecap="round"
@@ -24,7 +24,7 @@
           </svg></p
       ></a>
       <div
-        class="fixed inset-0 z-10 transition bg-black"
+        class="fixed inset-0 z-10 bg-black transition"
         :class="{
           'invisible opacity-0': !showMenu,
           'visible opacity-40': showMenu,
@@ -32,16 +32,16 @@
         @click="showMenu = !showMenu"
       ></div>
       <div
-        class="absolute right-0 z-20 w-full px-5 mt-16 transition transform"
+        class="absolute right-0 z-20 mt-16 w-full px-5 transition"
         :class="{
-          'pointer-events-none opacity-0 -translate-y-3 translate-x-2 scale-95':
+          'pointer-events-none -translate-y-3 translate-x-2 scale-95 opacity-0':
             !showMenu,
-          'pointer-events-auto opacity-100 translate-y-0 translate-x-0 scale-100':
+          'pointer-events-auto translate-y-0 translate-x-0 scale-100 opacity-100':
             showMenu,
         }"
       >
         <ul
-          class="flex flex-col w-full overflow-hidden rounded shadow-md bg-gray-50"
+          class="flex w-full flex-col overflow-hidden rounded bg-gray-50 shadow-md"
         >
           <li class="flex">
             <h3 class="flex flex-1 px-5 py-4 font-semibold text-gray-800">

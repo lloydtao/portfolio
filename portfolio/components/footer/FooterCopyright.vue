@@ -1,5 +1,5 @@
 <template>
-  <div class="text-gray-50 text-sm font-semibold">
+  <div class="text-sm font-semibold text-gray-50">
     Lewis Lloyd &copy; {{ date }}
   </div>
 </template>
