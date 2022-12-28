@@ -34,9 +34,9 @@
       <div
         class="absolute right-0 z-20 mt-16 w-full px-5 transition"
         :class="{
-          'pointer-events-none -translate-y-3 translate-x-2 scale-95 opacity-0':
+          'pointer-events-none -translate-y-3 translate-x-2 scale-95 transform opacity-0 ':
             !showMenu,
-          'pointer-events-auto translate-y-0 translate-x-0 scale-100 opacity-100':
+          'pointer-events-auto translate-y-0 translate-x-0 scale-100 transform opacity-100 ':
             showMenu,
         }"
       >
