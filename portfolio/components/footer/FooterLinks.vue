@@ -2,12 +2,20 @@
   <div class="flex space-x-12">
     <ul class="flex flex-col">
       <li>
-        <p class="text-gray-100 font-semibold text-sm">Pages</p>
+        <p class="text-sm font-semibold text-gray-100">Pages</p>
+      </li>
+      <li>
+        <NuxtLink
+          to="/blog/"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+        >
+          Blog
+        </NuxtLink>
       </li>
       <li>
         <NuxtLink
           to="/projects/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
         >
           Projects
         </NuxtLink>
@@ -15,7 +23,7 @@
       <li>
         <NuxtLink
           to="/contact/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
         >
           Contact
         </NuxtLink>
@@ -23,19 +31,19 @@
     </ul>
     <ul class="flex flex-col">
       <li>
-        <p class="text-gray-100 font-semibold text-sm">Resources</p>
+        <p class="text-sm font-semibold text-gray-100">Resources</p>
       </li>
       <li>
         <a
           href="https://github.com/lloydtao/portfolio"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
           >Source code</a
         >
       </li>
       <li>
         <NuxtLink
           to="/storybook/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
         >
           Storybook
         </NuxtLink>
@@ -43,12 +51,12 @@
     </ul>
     <ul class="flex flex-col">
       <li>
-        <p class="text-gray-100 font-semibold text-sm">Other</p>
+        <p class="text-sm font-semibold text-gray-100">Other</p>
       </li>
       <li>
         <NuxtLink
           to="/leetcode/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
         >
           Leetcode
         </NuxtLink>
@@ -56,7 +64,7 @@
       <li>
         <NuxtLink
           to="/graphics/"
-          class="text-gray-300 hover:text-gray-400 duration-100 text-sm"
+          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
         >
           Graphics
         </NuxtLink>
