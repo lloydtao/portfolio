@@ -7,7 +7,7 @@
     >
       <div
         id="blocker"
-        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+        class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
       >
         <div id="instructions" class="rounded bg-gray-50 px-8 py-5 shadow">
           <div class="flex flex-col">
