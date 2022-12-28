@@ -61,7 +61,7 @@
         class="flex flex-col sm:flex-row space-x-0 sm:space-x-3 space-y-3 sm:space-y-0"
       >
         <HeroButton
-          href="https://instagram.com/lloydtao"
+          href="https://github.com/lloydtao"
           class="bg-github-primary hover:bg-github-lighter duration-100"
         >
           <IconWrapper>
