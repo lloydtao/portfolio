@@ -1,5 +1,5 @@
 <template>
-  <a class="h-6 w-6">
+  <a class="w-6 h-6">
     <slot></slot>
   </a>
 </template>

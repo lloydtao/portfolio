@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-5">
+  <div class="container px-5 mx-auto">
     <h1 class="mt-5 text-4xl font-black text-gray-100">
       {{ post.title }}
     </h1>
@@ -10,7 +10,7 @@
       {{ post.description }}
     </p>
     <div
-      class="prose prose-sm mx-auto mt-8 overflow-hidden rounded bg-gray-100 md:prose-lg"
+      class="overflow-hidden mx-auto mt-8 bg-gray-100 rounded prose prose-sm md:prose-lg"
     >
       <NuxtContent class="px-8 pb-5" :document="post" />
     </div>

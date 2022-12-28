@@ -2,7 +2,7 @@
   <li class="w-full">
     <NuxtLink :to="{ name: route, params: { slug: slug } }">
       <div
-        class="h-full border border-gray-600 bg-gray-800 py-3 duration-100 hover:border-gray-500 hover:bg-gray-700"
+        class="py-3 h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 duration-100"
       >
         <h1 class="px-5 font-semibold text-white">{{ title }}</h1>
         <h2 class="px-5 text-sm text-gray-300">

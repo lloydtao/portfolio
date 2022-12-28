@@ -1,7 +1,7 @@
 <template>
   <a
     :href="link"
-    class="overflow-hidden rounded-lg border border-gray-700 bg-gray-900 shadow duration-200 hover:bg-gray-700"
+    class="overflow-hidden bg-gray-900 hover:bg-gray-700 rounded-lg border border-gray-700 shadow duration-200"
   >
     <div class="flex flex-col md:flex-row">
       <div class="overflow-hidden">
@@ -14,7 +14,7 @@
           format="webp"
         />
       </div>
-      <div class="flex flex-1 flex-col px-5 py-4">
+      <div class="flex flex-col flex-1 py-4 px-5">
         <p class="text-xl font-semibold text-gray-100">
           {{ title }}
         </p>

@@ -1,11 +1,11 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
+      <h1 class="text-3xl sm:text-4xl font-black text-gray-100 uppercase">
         Projects
       </h1>
       <p class="mt-3 text-lg text-gray-300">How I've kept myself busy</p>
-      <h2 class="mt-5 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
+      <h2 class="mt-5 text-2xl sm:text-3xl font-black text-gray-200 uppercase">
         Gridlink
       </h2>
       <p class="mt-3 text-lg text-gray-300">
@@ -16,7 +16,7 @@
       </div>
     </Section>
     <Section>
-      <h2 class="mt-8 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
+      <h2 class="mt-8 text-2xl sm:text-3xl font-black text-gray-200 uppercase">
         Hackathons
       </h2>
       <p class="mt-3 text-lg text-gray-300">
@@ -27,7 +27,7 @@
       </div>
     </Section>
     <Section>
-      <h2 class="mt-8 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
+      <h2 class="mt-8 text-2xl sm:text-3xl font-black text-gray-200 uppercase">
         Personal
       </h2>
       <p class="mt-3 text-lg text-gray-300">

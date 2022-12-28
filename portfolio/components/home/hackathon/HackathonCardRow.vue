@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto flex flex-col space-y-5 md:mx-0">
+  <div class="flex flex-col mx-auto md:mx-0 space-y-5">
     <HackathonCard
       title="Junction 2021"
       project="KeepChat"

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="absolute h-full w-full">
+    <div class="absolute w-full h-full">
       <img
         class="top-0 w-full"
         src="/images/bg.svg"
@@ -9,7 +9,7 @@
         alt="Blue and purple background graphics"
       />
     </div>
-    <div class="absolute top-0 h-full w-full">
+    <div class="absolute top-0 w-full h-full">
       <div>
         <Section>
           <Navbar />
