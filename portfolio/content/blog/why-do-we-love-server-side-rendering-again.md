@@ -4,7 +4,7 @@ title: 'Why do we love server-side rendering again? 🤯'
 subtitle: ''
 series: ''
 description: 'In order to understand the current trends, let’s have a look at the history of rendering on the web.'
-localimage: '/images/github-actions.png'
+localimage: '/images/server-side-rendering.png'
 publishedAt: '2022-12-28T14:00:00.000Z'
 tags: 'vue, react, nextjs, nuxt'
 published: true
