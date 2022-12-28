@@ -39,14 +39,14 @@
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^4.0.0",
-    "eslint-plugin-tailwindcss": "^3.7.1",
+    "eslint-plugin-tailwindcss": "^2.0.1",
     "eslint-plugin-vue": "^9.8.0",
     "jest": "^29.3.1",
     "jest-environment-jsdom": "^29.3.1",
     "nuxt": "^2.15.8",
     "postcss": "^8.4.20",
     "prettier": "^2.8.1",
-    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "2.2.19",
     "three": "^0.148.0",
     "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
@@ -55,9 +55,7 @@
     "vue-server-renderer": "2.7.14",
     "webpack": "4.46.0"
   },
-  "overrides": {
-    "@nuxtjs/tailwindcss": {
-      "@nuxt/kit": "3.0.0-rc.13"
-    }
+  "resolutions": {
+    "tailwindcss": "2.2.19"
   }
 }

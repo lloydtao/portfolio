@@ -6,14 +6,14 @@
         class="absolute right-0 z-30 flex-none px-5"
         @click="showMenu = !showMenu"
         ><p
-          class="rounded p-2 font-semibold tracking-wide text-gray-200 hover:bg-gray-900/30"
+          class="p-2 font-semibold tracking-wide text-gray-200 hover:bg-gray-900 hover:bg-opacity-30 rounded"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
-            class="h-6 w-6"
+            class="w-6 h-6"
           >
             <path
               stroke-linecap="round"
@@ -32,7 +32,7 @@
         @click="showMenu = !showMenu"
       ></div>
       <div
-        class="absolute right-0 z-20 mt-16 w-full px-5 transition"
+        class="absolute right-0 z-20 px-5 mt-16 w-full transition"
         :class="{
           'pointer-events-none -translate-y-3 translate-x-2 scale-95 transform opacity-0 ':
             !showMenu,
@@ -41,38 +41,38 @@
         }"
       >
         <ul
-          class="flex w-full flex-col overflow-hidden rounded bg-gray-50 shadow-md"
+          class="flex overflow-hidden flex-col w-full bg-gray-50 rounded shadow-md"
         >
           <li class="flex">
-            <h3 class="flex flex-1 px-5 py-4 font-semibold text-gray-800">
+            <h3 class="flex flex-1 py-4 px-5 font-semibold text-gray-800">
               Navigation
             </h3>
           </li>
           <li class="flex border-t" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/`"
-              class="flex flex-1 px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-100"
+              class="flex flex-1 py-4 px-8 text-lg font-semibold text-gray-700 hover:bg-gray-100"
               >Home</NuxtLink
             >
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/blog/`"
-              class="flex flex-1 px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-100"
+              class="flex flex-1 py-4 px-8 text-lg font-semibold text-gray-700 hover:bg-gray-100"
               >Blog</NuxtLink
             >
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/projects/`"
-              class="flex flex-1 px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-100"
+              class="flex flex-1 py-4 px-8 text-lg font-semibold text-gray-700 hover:bg-gray-100"
               >Projects</NuxtLink
             >
           </li>
           <li class="flex" @click="showMenu = !showMenu">
             <NuxtLink
               :to="`/contact/`"
-              class="flex flex-1 px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-100"
+              class="flex flex-1 py-4 px-8 text-lg font-semibold text-gray-700 hover:bg-gray-100"
               >Contact</NuxtLink
             >
           </li>

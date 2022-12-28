@@ -7,7 +7,7 @@
       <li>
         <NuxtLink
           to="/blog/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Blog
         </NuxtLink>
@@ -15,7 +15,7 @@
       <li>
         <NuxtLink
           to="/projects/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Projects
         </NuxtLink>
@@ -23,7 +23,7 @@
       <li>
         <NuxtLink
           to="/contact/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Contact
         </NuxtLink>
@@ -36,14 +36,14 @@
       <li>
         <a
           href="https://github.com/lloydtao/portfolio"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
           >Source code</a
         >
       </li>
       <li>
         <NuxtLink
           to="/storybook/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Storybook
         </NuxtLink>
@@ -56,7 +56,7 @@
       <li>
         <NuxtLink
           to="/leetcode/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Leetcode
         </NuxtLink>
@@ -64,7 +64,7 @@
       <li>
         <NuxtLink
           to="/graphics/"
-          class="text-sm text-gray-300 duration-100 hover:text-gray-400"
+          class="text-sm text-gray-300 hover:text-gray-400 duration-100"
         >
           Graphics
         </NuxtLink>

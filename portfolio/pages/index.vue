@@ -10,7 +10,7 @@
     </Section>
     <Section>
       <div class="pt-3 pb-5">
-        <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
+        <h1 class="text-3xl sm:text-4xl font-black text-gray-100 uppercase">
           Recent posts
         </h1>
         <div class="mt-5">

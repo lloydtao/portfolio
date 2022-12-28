@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0">
+  <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3">
     <HeroButton
       href="https://github.com/LloydTao"
-      class="bg-github-primary duration-100 hover:bg-github-lighter"
+      class="bg-github-primary hover:bg-github-lighter duration-100"
     >
       <IconWrapper>
         <GitHub />
@@ -11,7 +11,7 @@
     </HeroButton>
     <HeroButton
       href="https://twitter.com/LloydTao"
-      class="bg-twitter-websafe duration-100 hover:bg-twitter-primary"
+      class="bg-twitter-websafe hover:bg-twitter-primary duration-100"
     >
       <IconWrapper>
         <Twitter />

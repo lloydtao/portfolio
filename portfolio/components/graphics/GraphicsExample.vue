@@ -2,14 +2,14 @@
   <div>
     <div
       id="canvas"
-      class="relative mx-auto overflow-hidden rounded ring-2 ring-gray-200"
+      class="overflow-hidden relative mx-auto rounded ring-2 ring-gray-200"
       style="height: 480px; caret-color: transparent"
     >
       <div
         id="blocker"
-        class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
       >
-        <div id="instructions" class="rounded bg-gray-50 px-8 py-5 shadow">
+        <div id="instructions" class="py-5 px-8 bg-gray-50 rounded shadow">
           <div class="flex flex-col">
             <h2 class="mx-auto text-lg font-semibold text-gray-700">
               Click to play
