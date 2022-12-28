@@ -1,18 +1,39 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
+      <h1 class="text-3xl font-black text-gray-100 uppercase sm:text-4xl">
         Blog
       </h1>
-      <p class="text-gray-300 mt-5">There is nothing here...</p>
+      <p class="mt-3 text-lg text-gray-300">How I've kept myself busy</p>
+      <div class="mt-5">
+        <PostGrid :posts="blog" route="blog-slug" />
+      </div>
     </Section>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
   name: 'BlogPage',
+  async asyncData({ $content }) {
+    const blog = await $content('blog')
+      .only([
+        'slug',
+        'title',
+        'subtitle',
+        'description',
+        'series',
+        'localimage',
+        'publishedAt',
+        'published',
+      ])
+      .sortBy('publishedAt', 'desc')
+      .fetch()
+    return {
+      blog,
+    }
+  },
 })
 </script>
