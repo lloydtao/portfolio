@@ -8,13 +8,43 @@
         <Skills />
       </div>
     </Section>
+    <Section>
+      <div class="pt-3 pb-5">
+        <h1 class="text-3xl font-black text-gray-100 uppercase sm:text-4xl">
+          Recent posts
+        </h1>
+        <div class="mt-5">
+          <PostGrid :posts="blog" route="blog-slug" />
+        </div>
+      </div>
+    </Section>
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 
 export default Vue.extend({
   name: 'IndexPage',
+  async asyncData({ $content }) {
+    const blog = await $content('', { deep: true })
+      .only([
+        'slug',
+        'title',
+        'subtitle',
+        'description',
+        'series',
+        'localimage',
+        'publishedAt',
+        'published',
+      ])
+      .where({ series: 'Blog' })
+      .limit(4)
+      .sortBy('publishedAt', 'desc')
+      .fetch()
+    return {
+      blog,
+    }
+  },
 })
 </script>

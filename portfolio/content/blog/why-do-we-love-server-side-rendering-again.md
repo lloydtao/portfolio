@@ -2,7 +2,7 @@
 slug: 'why-do-we-love-server-side-rendering-again'
 title: 'Why do we love server-side rendering again? 🤯'
 subtitle: ''
-series: ''
+series: 'Blog'
 description: 'In order to understand the current trends, let’s have a look at the history of rendering on the web.'
 localimage: '/images/server-side-rendering.png'
 publishedAt: '2022-12-28T14:00:00.000Z'
