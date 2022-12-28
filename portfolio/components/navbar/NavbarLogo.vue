@@ -1,7 +1,7 @@
 <template>
   <NuxtLink
     to="/"
-    class="flex items-center space-x-3 text-gray-50 hover:text-gray-400 duration-100"
+    class="flex items-center space-x-3 text-gray-50 duration-100 hover:text-gray-400"
   >
     <image-safe
       image-class="w-8"

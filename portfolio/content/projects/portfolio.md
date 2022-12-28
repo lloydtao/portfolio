@@ -33,23 +33,23 @@ When paired with component-driven development, it lends itself to being a powerf
 
 ```html
 <div
-  class="hidden sm:flex items-center space-x-5 md:space-x-8 justify-center flex-1"
+  class="hidden flex-1 items-center justify-center space-x-5 sm:flex md:space-x-8"
 >
   <a
     href="/projects/"
-    class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
+    class="font-semibold text-gray-50 duration-100 hover:text-gray-400"
   >
     Projects
   </a>
   <a
     href="/leetcode/"
-    class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
+    class="font-semibold text-gray-50 duration-100 hover:text-gray-400"
   >
     Leetcode
   </a>
   <a
     href="/contact/"
-    class="text-gray-50 hover:text-gray-400 font-semibold duration-100"
+    class="font-semibold text-gray-50 duration-100 hover:text-gray-400"
   >
     Contact
   </a>

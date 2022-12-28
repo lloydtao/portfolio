@@ -1,15 +1,15 @@
 <template>
   <div
-    class="bg-gray-700 border border-gray-500 rounded shadow px-5 py-5 duration-100"
+    class="rounded border border-gray-500 bg-gray-700 p-5 shadow duration-100"
   >
     <div class="flex flex-col">
       <div class="flex justify-center">
         <slot name="icon"></slot>
       </div>
-      <div class="text-center text-gray-200 font-semibold mt-1">
+      <div class="mt-1 text-center font-semibold text-gray-200">
         {{ skill }}
       </div>
-      <div class="text-center text-sm text-gray-300 font-mono mt-1">
+      <div class="mt-1 text-center font-mono text-sm text-gray-300">
         {{ description }}
       </div>
     </div>

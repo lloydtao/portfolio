@@ -1,7 +1,7 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-3xl font-black text-gray-100 uppercase sm:text-4xl">
+      <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
         Blog
       </h1>
       <p class="mt-3 text-lg text-gray-300">How I've kept myself busy</p>

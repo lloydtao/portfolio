@@ -1,14 +1,14 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
+      <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
         Projects
       </h1>
-      <p class="text-lg text-gray-300 mt-3">How I've kept myself busy</p>
-      <h2 class="text-2xl sm:text-3xl text-gray-200 uppercase font-black mt-5">
+      <p class="mt-3 text-lg text-gray-300">How I've kept myself busy</p>
+      <h2 class="mt-5 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
         Gridlink
       </h2>
-      <p class="text-lg text-gray-300 mt-3">
+      <p class="mt-3 text-lg text-gray-300">
         My journey in building a production-ready web application
       </p>
       <div class="mt-5">
@@ -16,10 +16,10 @@
       </div>
     </Section>
     <Section>
-      <h2 class="mt-8 text-2xl sm:text-3xl text-gray-200 uppercase font-black">
+      <h2 class="mt-8 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
         Hackathons
       </h2>
-      <p class="text-lg text-gray-300 mt-3">
+      <p class="mt-3 text-lg text-gray-300">
         Rapid and collaborative engineering challenges
       </p>
       <div class="mt-5">
@@ -27,10 +27,10 @@
       </div>
     </Section>
     <Section>
-      <h2 class="mt-8 text-2xl sm:text-3xl text-gray-200 uppercase font-black">
+      <h2 class="mt-8 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
         Personal
       </h2>
-      <p class="text-lg text-gray-300 mt-3">
+      <p class="mt-3 text-lg text-gray-300">
         Projects for skill building and technical exploration
       </p>
       <div class="mt-5">

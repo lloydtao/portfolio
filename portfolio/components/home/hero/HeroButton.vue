@@ -1,6 +1,6 @@
 <template>
-  <a class="flex rounded shadow py-3 px-5">
-    <div class="flex items-center text-white space-x-3">
+  <a class="flex rounded py-3 px-5 shadow">
+    <div class="flex items-center space-x-3 text-white">
       <slot></slot>
     </div>
   </a>

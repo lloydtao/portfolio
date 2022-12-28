@@ -1,7 +1,7 @@
 <template>
   <div>
     <SkillsHeading />
-    <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3 mt-3">
+    <div class="mt-3 grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-6">
       <SkillsCard
         class="flex-1"
         skill="Frontend"

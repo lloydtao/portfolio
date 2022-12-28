@@ -2,10 +2,10 @@
   <li class="w-full">
     <NuxtLink :to="{ name: route, params: { slug: slug } }">
       <div
-        class="h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 py-3 duration-100"
+        class="h-full border border-gray-600 bg-gray-800 py-3 duration-100 hover:border-gray-500 hover:bg-gray-700"
       >
-        <h1 class="font-semibold text-white px-5">{{ title }}</h1>
-        <h2 class="text-sm text-gray-300 px-5">
+        <h1 class="px-5 font-semibold text-white">{{ title }}</h1>
+        <h2 class="px-5 text-sm text-gray-300">
           {{ formatDate(publishedAt) }} · {{ series }}
         </h2>
       </div>

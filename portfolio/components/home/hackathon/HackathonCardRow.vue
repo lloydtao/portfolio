@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col space-y-5 mx-auto md:mx-0">
+  <div class="mx-auto flex flex-col space-y-5 md:mx-0">
     <HackathonCard
       title="Junction 2021"
       project="KeepChat"
@@ -24,7 +24,7 @@
       date="25th January 2020"
       link="https://github.com/LloydTao/Hackathon-Met-Office-2020"
     >
-      <p class="text-yellow-400 font-semibold">&#129351; First place!</p>
+      <p class="font-semibold text-yellow-400">&#129351; First place!</p>
     </HackathonCard>
   </div>
 </template>

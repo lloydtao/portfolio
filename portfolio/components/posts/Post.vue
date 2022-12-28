@@ -1,16 +1,16 @@
 <template>
   <div class="container mx-auto px-5">
-    <h1 class="text-4xl text-gray-100 font-black mt-5">
+    <h1 class="mt-5 text-4xl font-black text-gray-100">
       {{ post.title }}
     </h1>
-    <p class="text-gray-200 mt-3">
+    <p class="mt-3 text-gray-200">
       {{ formatDate(post.publishedAt) }} · {{ post.series }}
     </p>
-    <p class="text-lg text-gray-200 mt-3">
+    <p class="mt-3 text-lg text-gray-200">
       {{ post.description }}
     </p>
     <div
-      class="bg-gray-100 prose prose-sm md:prose-lg rounded mt-8 mx-auto overflow-hidden"
+      class="prose prose-sm mx-auto mt-8 overflow-hidden rounded bg-gray-100 md:prose-lg"
     >
       <NuxtContent class="px-8 pb-5" :document="post" />
     </div>

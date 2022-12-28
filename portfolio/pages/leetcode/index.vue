@@ -1,10 +1,10 @@
 <template>
   <div>
     <Section>
-      <h1 class="text-3xl sm:text-4xl text-gray-100 uppercase font-black">
+      <h1 class="text-3xl font-black uppercase text-gray-100 sm:text-4xl">
         Leetcode
       </h1>
-      <h2 class="text-2xl sm:text-3xl text-gray-200 uppercase font-black mt-5">
+      <h2 class="mt-5 text-2xl font-black uppercase text-gray-200 sm:text-3xl">
         Solutions
       </h2>
       <div class="mt-5">
