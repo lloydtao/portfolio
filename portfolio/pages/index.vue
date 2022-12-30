@@ -27,7 +27,7 @@ import Vue from 'vue'
 export default Vue.extend({
   name: 'IndexPage',
   async asyncData({ $content }) {
-    const blog = await $content('', { deep: true })
+    const blog = await $content('blog', { deep: true })
       .only([
         'slug',
         'title',
@@ -38,7 +38,6 @@ export default Vue.extend({
         'publishedAt',
         'published',
       ])
-      .where({ series: 'Blog' })
       .limit(4)
       .sortBy('publishedAt', 'desc')
       .fetch()
