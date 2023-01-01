@@ -5,7 +5,8 @@ subtitle: ''
 series: 'Nuxt 3'
 description: 'Getting started with Vitest for blazing-fast unit tests.'
 localimage: '/images/nuxt-vitest-16-9.png'
-publishedAt: '2023-01-04T09:00:00.000Z'
+cover_image: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wlnkh4kjkjq6u0yqz54e.png'
+publishedAt: '2023-01-05T09:00:00.000Z'
 tags: 'nuxt, nuxt3, vitest, testing'
 published: true
 ---

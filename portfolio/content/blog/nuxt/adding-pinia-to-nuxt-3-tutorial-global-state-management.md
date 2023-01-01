@@ -5,8 +5,9 @@ subtitle: ''
 series: 'Nuxt 3'
 description: 'Getting started with Pinia for global state management.'
 localimage: '/images/nuxt-cover-16-9.png'
-publishedAt: '2022-12-30T09:00:00.000Z'
-tags: 'nuxt, nuxt3, nuxtjs, pinia'
+cover_image: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/eozu62uqnpka4l58nhah.png'
+publishedAt: '2023-01-04T09:00:00.000Z'
+tags: 'nuxt, nuxt3, pinia'
 published: true
 ---
 
