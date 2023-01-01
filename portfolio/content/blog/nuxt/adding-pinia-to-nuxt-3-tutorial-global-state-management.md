@@ -1,6 +1,6 @@
 ---
 slug: 'adding-pinia-to-nuxt-3-tutorial-global-state-management'
-title: 'Adding Pinia to Nuxt 3 🍍'
+title: 'Adding Pinia to Nuxt 3 🍍 (2023)'
 subtitle: ''
 series: 'Nuxt 3'
 description: 'Getting started with Pinia for global state management.'
