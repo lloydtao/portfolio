@@ -59,6 +59,16 @@ export default defineNuxtConfig({
 
 And just like that, you can now start adding Tailwind classes to your Nuxt components!
 
+### Prettier integration
+
+If you're using Prettier from earlier in the series, you should also add its Tailwind plugin:
+
+```bash
+yarn add --dev prettier-plugin-tailwindcss
+```
+
+This will give you automatic class sorting which is incredibly useful for organisation, especially when using lots of classes in one element (e.g. `hover:`, `dark:`). It should work automatically thanks to Prettier’s [autoloading convention](https://prettier.io/docs/en/plugins.html).
+
 ## Classes
 
 To get started, add some of Tailwind's in-built utilities to an element's `class` attribute.
