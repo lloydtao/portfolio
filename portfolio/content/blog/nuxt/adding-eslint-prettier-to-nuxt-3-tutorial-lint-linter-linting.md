@@ -5,8 +5,9 @@ subtitle: ''
 series: 'Nuxt 3'
 description: 'Getting started with ESLint and Prettier for automatic code style formatting.'
 localimage: '/images/nuxt-eslint-prettier-16-9.png'
-publishedAt: '2023-01-01T09:00:00.000Z'
-tags: 'nuxt, nuxt3, tailwindcss'
+cover_image: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5vzpr7348dutp0fu8dxb.png'
+publishedAt: '2023-01-02T09:00:00.000Z'
+tags: 'nuxt, nuxt3, eslint, prettier'
 published: true
 ---
 

@@ -5,7 +5,8 @@ subtitle: ''
 series: 'Nuxt 3'
 description: 'Getting started with Tailwind CSS for utility-first styling.'
 localimage: '/images/nuxt-tailwind-16-9.png'
-publishedAt: '2022-12-31T09:00:00.000Z'
+cover_image: 'https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x5hmki02dbl8xwt820vj.png'
+publishedAt: '2023-01-03T09:00:00.000Z'
 tags: 'nuxt, nuxt3, tailwindcss'
 published: true
 ---
