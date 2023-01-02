@@ -38,7 +38,7 @@ export default Vue.extend({
         'publishedAt',
         'published',
       ])
-      .limit(4)
+      .limit(12)
       .sortBy('publishedAt', 'desc')
       .fetch()
     return {
