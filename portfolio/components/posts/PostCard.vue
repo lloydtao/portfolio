@@ -2,15 +2,8 @@
   <li class="w-full">
     <NuxtLink :to="{ name: route, params: { slug: slug } }">
       <div
-        class="py-3 h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 duration-100"
+        class="h-full bg-gray-800 hover:bg-gray-700 border border-gray-600 hover:border-gray-500 duration-100"
       >
-        <h1 class="px-5 font-semibold text-white">{{ title }}</h1>
-        <h2 class="px-5 mt-0.5 text-sm text-gray-300">
-          {{ formatDate(publishedAt) }}
-        </h2>
-        <h2 class="px-5 mt-1 mb-3 text-sm text-gray-500 truncate">
-          {{ subtitle }}
-        </h2>
         <div class="overflow-hidden" style="aspect-ratio: 16 / 9">
           <img
             :src="localimage"
@@ -20,9 +13,15 @@
             height="360"
           />
         </div>
-        <p class="overflow-hidden px-5 mt-3 sm:text-sm text-gray-200">
-          {{ description }}
-        </p>
+        <div class="py-4">
+          <h1 class="px-5 font-semibold text-white">{{ title }}</h1>
+          <h2 class="px-5 mt-0.5 text-sm text-gray-400">
+            {{ formatDate(publishedAt) }}
+          </h2>
+          <p class="overflow-hidden px-5 mt-2 sm:text-sm text-gray-200">
+            {{ description }}
+          </p>
+        </div>
       </div>
     </NuxtLink>
   </li>
