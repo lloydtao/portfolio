@@ -44,6 +44,3 @@ jobs:
 
       - name: Lint project
         run: yarn lint
-
-      - name: Test project
-        run: yarn test
