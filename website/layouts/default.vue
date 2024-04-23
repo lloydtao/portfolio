@@ -16,7 +16,7 @@
         </div>
         <NuxtPage />
         <div class="container px-5 py-8 mx-auto">
-          <Footer />
+          <FooterBar />
         </div>
       </div>
     </div>
