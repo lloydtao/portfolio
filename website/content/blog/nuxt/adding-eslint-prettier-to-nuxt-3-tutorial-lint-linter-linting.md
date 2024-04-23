@@ -80,7 +80,7 @@ Add the following scripts to your `package.json` file:
     "lint": "yarn lint:eslint && yarn lint:prettier",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier . --check",
-    "lintfix": "prettier --write --list-different . && eslint . --fix"
+    "lintfix": "eslint . --fix && prettier --write --list-different ."
     // ...
   }
 }
