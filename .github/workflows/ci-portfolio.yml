@@ -1,4 +1,4 @@
-name: portfolio ci
+name: website ci
 
 on:
   pull_request:
@@ -10,11 +10,11 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: portfolio/
+    working-directory: website/
 
 jobs:
   ci:
-    name: Build and test portfolio
+    name: Build and test website
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -22,18 +22,18 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - 16.16.0
+          - 20.12.2
         package-manager:
           - yarn
         lockfile:
-          - portfolio/yarn.lock
+          - website/yarn.lock
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v4.1.3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: ${{ matrix.node-version }}
           cache: ${{ matrix.package-manager }}

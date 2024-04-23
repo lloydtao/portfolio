@@ -1,4 +1,4 @@
-name: portfolio cd
+name: website cd
 
 on:
   push:
@@ -8,11 +8,11 @@ on:
 defaults:
   run:
     shell: bash
-    working-directory: portfolio/
+    working-directory: website/
 
 jobs:
   cd:
-    name: Build and deploy portfolio
+    name: Build and deploy website
     runs-on: ${{ matrix.os }}
 
     strategy:
@@ -20,18 +20,18 @@ jobs:
         os:
           - ubuntu-latest
         node-version:
-          - 16.16.0
+          - 20.12.2
         package-manager:
           - yarn
         lockfile:
-          - portfolio/yarn.lock
+          - website/yarn.lock
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3.0.2
+        uses: actions/checkout@v4.1.3
 
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: ${{ matrix.node-version }}
           cache: ${{ matrix.package-manager }}
@@ -49,10 +49,7 @@ jobs:
       - name: Generate project
         run: yarn generate
 
-      - name: Export storybook
-        run: yarn storybook build --output-dir "dist/_storybook"
-
       - name: Deploy project to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4.4.0
+        uses: JamesIves/github-pages-deploy-action@v4.6.0
         with:
-          folder: portfolio/dist
+          folder: website/.output/public
