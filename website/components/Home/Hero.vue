@@ -8,7 +8,7 @@
           width="256"
           height="256"
           alt="Diamond Beach photo in Iceland"
-        >
+        />
       </div>
       <h1 class="mt-8 text-4xl sm:text-5xl font-black text-gray-100 uppercase">
         Lewis Lloyd
