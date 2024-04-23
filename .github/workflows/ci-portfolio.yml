@@ -44,3 +44,11 @@ jobs:
 
       - name: Lint project
         run: yarn lint
+
+      - name: Generate project
+        run: yarn generate
+
+      - name: Deploy project to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.6.0
+        with:
+          folder: website/.output/public
