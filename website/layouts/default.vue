@@ -7,7 +7,7 @@
         width="1920"
         height="1080"
         alt="Blue and purple background graphics"
-      >
+      />
     </div>
     <div class="absolute top-0 w-full h-full">
       <div>

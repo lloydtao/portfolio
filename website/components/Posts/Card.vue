@@ -11,7 +11,7 @@
             class="object-cover w-full"
             width="640"
             height="360"
-          >
+          />
         </div>
         <div class="py-4">
           <h1 class="px-5 font-semibold text-white">{{ props.title }}</h1>
