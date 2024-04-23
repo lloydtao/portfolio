@@ -23,7 +23,7 @@
       class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3 sm:mx-auto mt-8"
     >
       <HomeHeroButton
-        href="https://github.com/lloydtao"
+        to="https://github.com/lloydtao"
         class="bg-github-primary hover:bg-github-lighter duration-100"
       >
         <IconsSocialWrapper>
@@ -32,7 +32,7 @@
         <span class="text-xl font-semibold">GitHub</span>
       </HomeHeroButton>
       <HomeHeroButton
-        href="https://twitter.com/lloydtao"
+        to="https://twitter.com/lloydtao"
         class="bg-twitter-websafe hover:bg-twitter-primary duration-100"
       >
         <IconsSocialWrapper>
@@ -41,7 +41,7 @@
         <span class="text-xl font-semibold">Twitter</span>
       </HomeHeroButton>
       <HomeHeroButton
-        href="https://linkedin.com/in/lloydtao"
+        to="https://linkedin.com/in/lloydtao"
         class="bg-linkedin-primary hover:bg-linkedin-lighter duration-100"
       >
         <IconsSocialWrapper>
